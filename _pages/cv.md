@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc. Chemistry, Leibniz University Hannover, 2014
+* M.Sc. Chemistry, Münster University, 2016
+* Ph.D in Physical Chemistry, Münster University, 2019
 
 Work experience
 ======
