@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Logo_HB4.PNG"
+title                    : "Henrik Bradtmüller"
 title_separator          : "-"
 name                     : &name "Henrik Bradtmüller"
 description              : &description "Ph.D. in physical chemistry and NMR scientist."
