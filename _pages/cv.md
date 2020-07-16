@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Physical Chemistry, Münster University, 2019
+* Ph.D. in Physical Chemistry, Münster University, 2019
   * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*. 
   * Advisors: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
 

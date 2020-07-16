@@ -86,7 +86,7 @@ author:
   location         : "Germany"
   employer         :
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=lU7OvVQAAAAJ"
   email            : "mail@bradtmueller.net"
   researchgate     : "https://www.researchgate.net/profile/Henrik_Bradtmueller" # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
