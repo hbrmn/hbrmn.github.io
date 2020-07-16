@@ -7,7 +7,14 @@ redirect_from:
   - /about/
   - /about.html
 ---
-/
+About me
+======
+
+Hi! My name is Henrik Bradtmüller and I am a Materials Scientist with a background in chemistry and solid-state nuclear magnetic resonance spectroscopy.
+
+Hi! I'm Henrik and currently a Postdoctoral Researcher at the University of Münster, in the Department of Physical Chemistry. I am a materials scientist and spectroscopist by training with a background in physical chemistry.
+
+My main research
  [my Github repository](https://github.com/hbrmn).
 
 Henrik Bradtmüller
