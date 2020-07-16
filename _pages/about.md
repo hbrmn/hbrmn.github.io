@@ -10,7 +10,7 @@ redirect_from:
 About
 ======
 
-Hi! My I'm Henrik Bradtmüller, a Materials Scientist with a background in chemistry and specialization in solid-state nuclear magnetic resonance (NMR) spectroscopy.
+Hi! I'm Henrik Bradtmüller, a Materials Scientist with a background in chemistry and specialization in solid-state nuclear magnetic resonance (NMR) spectroscopy.
 Currently I work as a Postdoctoral Researcher at the University of Münster, in the Department of Physical Chemistry.
 
 My main research
