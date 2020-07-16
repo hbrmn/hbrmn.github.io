@@ -43,15 +43,21 @@ Work experience
   * University of Münster
   * Institute of Physical Chemistry
   * Supervisor: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/)
-  
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Expertise in synthesis and structural characterization of crystalline, semi-crystalline (glass-ceramics), and vitreous materials (glasses).
+* Expertise in Solid-State Nuclear Magnetic Resonance (NMR) spectroscopy: Advanced mono- and bi-dimensional methods based on high-resolution single and double-resonance techniques (MAS, CPMAS, SATRAS, MQMAS, REDOR, REAPDOR, INADEQUATE, WCPMG, RESPDOR etc.).
+  * MAS, CPMAS, MQMAS, SATRAS, INADEQUATE, WCPMG
+  * REDOR, REAPDOR, TRAPDOR, RESPDOR
+* Expertise in numerical computer simulations for NMR experiments (SIMPSON).
+* Fundamental knowledge of Origin Lab, Matlab, Wolfram Mathematica and Python for automated data processing and visualization.
+* Basic experience in:
+  * X-ray diffraction (XRD) with database driven identification of unknown phases and Rietveld refinement
+  * Differential scanning calorimetry (DSC)
+  * Raman spectroscopy 
+  * UV-Vis and Fluorescence spectroscopy
+  * Neutron diffraction experiments
 
 Publications
 ======
