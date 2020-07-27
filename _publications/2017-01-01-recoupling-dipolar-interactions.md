@@ -12,4 +12,4 @@ The case of rotational echo double resonance (REDOR) experiments on the observe 
 
 [Download paper here](http://hbrmn.github.io/files/paper1.pdf)
 
-Recommended citation: L.M. Funke, H. Bradtmüller, H. Eckert, “Recoupling dipolar interactions with multiple I=1 quadrupolar nuclei: A 11B{6Li} and 31P{6Li} rotational echo double resonance study of lithium borophosphate glasses”, <i>Solid State Nuclear Magnetic Resonance</i>, **2017**, *84*, 143−150.
+Recommended citation: L.M. Funke, <b>H. Bradtmüller</b>, H. Eckert, “Recoupling dipolar interactions with multiple I=1 quadrupolar nuclei: A 11B{6Li} and 31P{6Li} rotational echo double resonance study of lithium borophosphate glasses”, <i>Solid State Nuclear Magnetic Resonance</i>, **2017**, *84*, 143−150.
