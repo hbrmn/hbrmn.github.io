@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Henrik Bradtmüller"
 title_separator          : "-"
 name                     : &name "Henrik Bradtmüller"
-description              : &description "Chemist - Postdoctoral researcher - "
+description              : &description "Postdoctoral researcher in Materials Science"
 url                      : https://hbrmn.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/hbrmn"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Henrik Bradtmüller"
   avatar           : "profile.png"
-  bio              : "Ph.D. in physical chemistry and NMR scientist."
+  bio              : "Materials Scientist and solid-state NMR enthusiast."
   location         : "Germany"
   employer         :
   pubmed           :
