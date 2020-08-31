@@ -1,7 +1,7 @@
 ---
 title: "Recoupling dipolar interactions with multiple I=1 quadrupolar nuclei: A 11B{6Li} and 31P{6Li} rotational echo double resonance study of lithium borophosphate glasses."
 collection: publications
-permalink: /publication/2017-01-01-recoupling-dipolar-interactions
+permalink: /publication/2017-07-01-recoupling-dipolar-interactions
 excerpt: 'This paper is about dipolar recoupling to I=1 quadrupolar nuclei.'
 date: 2017-01-01
 venue: 'Solid State Nuclear Magnetic Resonance'

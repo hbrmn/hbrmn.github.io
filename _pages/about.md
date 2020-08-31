@@ -31,7 +31,7 @@ Therefore, my main research is focused on developing novel characterization stra
 
 Other scientific interests
 ======
-After researching and understanding many individual glass-systems via the trial-and-error approach, to me, data science appears to be the next logical step to gain insights on the meta level and accelerate the development of new glasses with interesting properties. Machine learning and neural network models, which already help businesses and research to improve their performance, are already finding their way into the realm of glass research.[1](https://www.sciencedirect.com/science/article/abs/pii/S1359645420300720#!)[2](https://arxiv.org/abs/2007.03719)
+After researching and understanding many individual glass-systems via the trial-and-error approach, to me, data science appears to be the next logical step to gain insights on the meta level and accelerate the development of new glasses with interesting properties. Machine learning and neural network models, which already help businesses and research to improve their performance, are already finding their way into the realm of glass research.[1](https://www.sciencedirect.com/science/article/abs/pii/S1359645420300720#!) [2](https://arxiv.org/abs/2007.03719)
 
 [comment]: # (During my years in glass reseach, it was therefore that I have developed a very analytical eye inspired by the scientific process that sparked my interest for data science.  which is discussed mainly on three characteristic length-scales: short-range order (SRO), intermediate-range order (IRO), and medium-range order (MRO). These regimes respectively span the first, second- and third [my Github repository](https://github.com/hbrmn).)
 
