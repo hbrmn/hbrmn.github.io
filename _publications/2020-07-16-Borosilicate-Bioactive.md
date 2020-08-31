@@ -12,4 +12,4 @@ Transitioning beyond a trial-and-error based approach for the compositional desi
 
 [Download paper here](http://hbrmn.github.io/files/paper10.pdf)
 
-Recommended citation: Nicholas Stone-Weiss, <b>Henrik Bradtmüller</b>,, Mariagrazia Fortino, Marco Bertani, Randall E. Youngman, Alfonso Pedone, Hellmut Eckert*, and Ashutosh Goel*, “Combined Experimental and Computational Approach toward the Structural Design of Borosilicate-Based Bioactive Glasses”, Journal of Physical Chemistry C, **2020**, *124*, 32, 17655–17674.
+Recommended citation: Nicholas Stone-Weiss, **Henrik Bradtmüller**, Mariagrazia Fortino, Marco Bertani, Randall E. Youngman, Alfonso Pedone, Hellmut Eckert, and Ashutosh Goel, “Combined Experimental and Computational Approach toward the Structural Design of Borosilicate-Based Bioactive Glasses”, Journal of Physical Chemistry C, **2020**, *124*, 32, 17655–17674.

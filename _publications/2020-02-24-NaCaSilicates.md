@@ -12,4 +12,4 @@ The structural aspects of the glass-to-crystal transition of Na2O-2CaO-3SiO2 (1-
 
 [Paper upon request:](@mailto:mail@bradtmueller.net)
 
-Recommended citation: <b>H. Bradtmüller</b>, Mariana Carlos Villas-Boas, Edgar Dutra Zanotto, Hellmut Eckert, “Structural aspects of the glass-to-crystal transition in sodium-calcium silicate glasses”, Journal of Non-Crystalline Solids, **2020**, *535*, 119844.
+Recommended citation: <b>Henrik Bradtmüller</b>, Mariana Carlos Villas-Boas, Edgar Dutra Zanotto, Hellmut Eckert, “Structural aspects of the glass-to-crystal transition in sodium-calcium silicate glasses”, Journal of Non-Crystalline Solids, **2020**, *535*, 119844.
