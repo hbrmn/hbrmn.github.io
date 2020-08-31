@@ -12,4 +12,4 @@ In vitro, in vivo, and clinical studies - including histopathological, cytotoxic
 
 [Paper upon request:](@mailto:mail@bradtmueller.net)
 
-Recommended citation: <b>H. Bradtmüller</b>, B.M. Cerrutti, M.T. Souza, E.D. Zanotto, H. Eckert, “Structural characterization of boron-containing glassy and semi-crystalline Biosilicate® by multinuclear NMR”, Journal of Non-Crystalline Solids, 2019, <i>505</i>, 390−339.
+Recommended citation: <b>H. Bradtmüller</b>, B.M. Cerrutti, M.T. Souza, E.D. Zanotto, H. Eckert, “Structural characterization of boron-containing glassy and semi-crystalline Biosilicate® by multinuclear NMR”, Journal of Non-Crystalline Solids, **2019**, *505*, 390−339.

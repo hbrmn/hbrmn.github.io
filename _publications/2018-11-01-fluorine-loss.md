@@ -12,4 +12,4 @@ Four glass series with identical nominal composition of (100-x) NaPO3-xAlF3 (NAP
 
 [Download paper here](http://hbrmn.github.io/files/paper2.pdf)
 
-Recommended citation: D. Möncke, M.C.B. Neto, <b>H. Bradtmüller</b>, G.B. de Souza, A.M. Rodrigues, H.S. Elkholy, H.A. Othman, B.J.A. Moulton, E.I. Kamitsos, A.C.M. Rodrigues, D. Ehrt, “NaPO3-AlF3 GLASSES: FLUORINE EVAPORATION DURING MELTING AND THE RESULTING VARIATIONS IN STRUCTURE AND PROPERTIES”, <i>Journal of Chemical Technology and Metallurgy</i>, <b>2018</b>, <i>53(6)</i>, 1047−1060.
+Recommended citation: D. Möncke, M.C.B. Neto, <b>H. Bradtmüller</b>, G.B. de Souza, A.M. Rodrigues, H.S. Elkholy, H.A. Othman, B.J.A. Moulton, E.I. Kamitsos, A.C.M. Rodrigues, D. Ehrt, “NaPO3-AlF3 GLASSES: FLUORINE EVAPORATION DURING MELTING AND THE RESULTING VARIATIONS IN STRUCTURE AND PROPERTIES”, <i>Journal of Chemical Technology and Metallurgy</i>, **2018**, *53(6)*, 1047−1060.
