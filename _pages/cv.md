@@ -9,17 +9,23 @@ redirect_from:
 
 {% include base_path %}
 
+Recent Position
+======
+* Post doctoral researcher at the Federal University of São Carlos - UFSCar
+  * Topic: Elucidating structural rearrangements during glass relaxation and crystallization
+  * Advisor: Prof. Dr. Edgar D. Zanotto
+
 Education
 ======
-* Ph.D. in Physical Chemistry, Münster University, 2019
+* Ph.D. in Physical Chemistry, Münster University, 2016 - 2019
   * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*. 
   * Advisors: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
 
-* M.Sc. Chemistry, Münster University, 2016
+* M.Sc. Chemistry, Münster University, 2014 - 2016
   * Thesis: *Structural Characterisation of Cation Environments of Ion-Conducting Glass-Ceramics*. 
   * Advisor: [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
 
-* B.Sc. Chemistry, Leibniz University Hannover, 2014
+* B.Sc. Chemistry, Leibniz University Hannover, 2011 - 2014
   * Thesis: *Superstructures Based on Polymer-Coated Nanoparticles*. 
   * Advisor: [Prof. N.C. Bigall](https://www.pci.uni-hannover.de/en/research/research-groups/bigall-group/).
 
