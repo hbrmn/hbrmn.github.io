@@ -11,7 +11,7 @@ About
 ======
 
 Hi! I'm Henrik Bradtmüller, a Materials Scientist with a background in chemistry and specialization in solid-state nuclear magnetic resonance (NMR) spectroscopy.
-Currently, I work as a Postdoctoral Researcher at the University of Münster, in the Department of Physical Chemistry. If I can't be found in the lab I am probably somewhere near the next coffee machine...
+Currently, I am working as a Postdoctoral Researcher at the Federal University of São Carlos in the Vitrous Materials Lab (LaMaV) of Prof. Dr. Edgar Dutra Zanotto. If I can't be found in the lab I am probably somewhere near the next coffee machine (at home - due to the pandemic...).
 
 My research interest
 ======
