@@ -9,14 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-Recent Position
+Current Position
 ======
-* Post doctoral researcher at the Federal University of São Carlos - UFSCar
+* Post doctoral researcher at the Federal University of São Carlos, 2020 -
   * Topic: Elucidating structural rearrangements during glass relaxation and crystallization
   * Advisor: Prof. Dr. Edgar D. Zanotto
 
 Education
 ======
+* MBA in Data Science and Analytics, University of São Paulo/ESALQ, 2021 -
+
 * Ph.D. in Physical Chemistry, Münster University, 2016 - 2019
   * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*. 
   * Advisors: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
@@ -53,9 +55,13 @@ Work experience
 Skills
 ======
 * Expertise in synthesis and structural characterization of crystalline, semi-crystalline (glass-ceramics), and vitreous materials (glasses).
+
 * Expertise in Solid-State Nuclear Magnetic Resonance (NMR) spectroscopy: Advanced mono- and bi-dimensional methods based on high-resolution single and double-resonance techniques (MAS, CPMAS, SATRAS, MQMAS, REDOR, REAPDOR, INADEQUATE, WCPMG, RESPDOR etc.).
+
 * Expertise in numerical computer simulations for NMR experiments (SIMPSON).
+
 * Fundamental knowledge of Origin Lab, Matlab, Wolfram Mathematica and Python for automated data processing and visualization.
+
 * Basic experience in:
   * X-ray diffraction (XRD) with database driven identification of unknown phases and Rietveld refinement
   * Differential scanning calorimetry (DSC)
@@ -69,7 +75,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
@@ -79,6 +85,6 @@ Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 
