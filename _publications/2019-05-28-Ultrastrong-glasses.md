@@ -1,7 +1,7 @@
 ---
 title: "Structural Origins of Crack Resistance on Magnesium Aluminoborosilicate Glasses Studied by Solid-State NMR"
 collection: publications
-permalink: /publication/2019-05-28-Ultrastrong-glasses.md
+permalink: /publication/2019-05-28-Ultrastrong-glasses
 excerpt: 'This paper gives insights into the Mg-driven enhancement of crack-resistance in aluminoborosilicate glasses.'
 date: 2019-05-28
 venue: 'Journal of Physical Chemistry C'
