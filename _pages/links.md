@@ -5,9 +5,6 @@ permalink: /links/
 author_profile: true
 ---
 
-Links
-======
-
 Below you can find some useful things related to Glass, NMR, and Data Science.
 
 Glass
