@@ -1,6 +1,6 @@
 ---
 title: "Links"
-layout: splash
+layout: archive
 permalink: /links/
 author_profile: true
 ---
