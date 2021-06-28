@@ -5,6 +5,9 @@ permalink: /links/
 author_profile: true
 ---
 
+Links
+======
+
 Below you can find some useful things related to Glass, NMR, and Data Science.
 
 Glass
@@ -57,6 +60,6 @@ Others
 
  - [txti.es/](http://txti.es/) - Fast and easy generation of simple websites.
 
- -[backgroundchecks.org/justdeleteme/](https://backgroundchecks.org/justdeleteme/) - Collection of links to facilitate deletion of online accounts.
+ - [backgroundchecks.org/justdeleteme/](https://backgroundchecks.org/justdeleteme/) - Collection of links to facilitate deletion of online accounts.
 
- - [dlmf.nist.gov/10](https://dlmf.nist.gov/10) - Collectin of Bessel functions.
+ - [dlmf.nist.gov/10](https://dlmf.nist.gov/10) - Collection of Bessel functions.
