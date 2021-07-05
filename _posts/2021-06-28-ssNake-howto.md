@@ -7,17 +7,17 @@ permalink: /posts/2021/08/2021-06-28-ssnake-howto/
   - how-to
 ---
 
-Below you can find how to install and use (ssNake)[https://www.ru.nl/science/magneticresonance/software/ssnake/], for the processing and analysis of NMR data.
+Below you can find how to install and use [ssNake](https://www.ru.nl/science/magneticresonance/software/ssnake/), for the processing and analysis of NMR data.
 
 # Installation
 
 ## Windows - Standalone
 
-You can obtain ssNake through this (link)[https://www.ru.nl/publish/pages/914099/ssnake_v1_3_installer_windows.zip]. The installation is straightforward and will leave you with an executable to directly launch the software.
+You can obtain ssNake through this [link](https://www.ru.nl/publish/pages/914099/ssnake_v1_3_installer_windows.zip). The installation is straightforward and will leave you with an executable to directly launch the software.
 
 ## Linux / Python source code
 
-In order to run ssNake on Linux or on any other operating system with a present Python 3 installation, you can directly (download)[https://github.com/smeerten/ssnake/archive/refs/heads/master.zip] its source code or use git to clone it into a new directory:
+In order to run ssNake on Linux or on any other operating system with a present Python 3 installation, you can directly [download](https://github.com/smeerten/ssnake/archive/refs/heads/master.zip) its source code or use git to clone it into a new directory:
 
 ````bash
 mkdir ssNakeDir #This line is optional
@@ -30,9 +30,9 @@ git clone https://github.com/smeerten/ssnake.git
 ````
 After downloading you can simply navigate to "src" folder inside the installation folder and execute ssNake.py with Python:
 
-```Bash
+````Bash
 python3 ssNakeDir/src/ssnake.py
-```
+````
 
 # Fitting 
 
@@ -49,6 +49,9 @@ After you are satisfied with the processing of your dataset you can try to fit t
 
 In the following the general fitting procedure is demonstrated on a few example datasets.
 
+# Center of Mass
+
+
 # Lorentzian / Gaussian Fitting
 
 Open up the dataset
@@ -61,5 +64,5 @@ Once this is done we choose the Czjzek fitting option in the Fitting dropdown me
 
 
 
-A number of advanced tutorials can be found (here)[https://github.com/smeerten/ssnake_tutorials].
+A number of advanced tutorials can be found [here](https://github.com/smeerten/ssnake_tutorials).
 
