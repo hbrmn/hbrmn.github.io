@@ -35,9 +35,11 @@ python3 ssNakeDir/src/ssnake.py
 # Processing data
 Once ssNake's GUI is loaded, you can open a new dataset via `File --> Open` which will either display an FID (like in my case) or a spectrum, depending on whether your data was already processed before or not.
 
-![Loaded FID](/images/ssNake_howto/FID_loaded.jpg "Title")
+![Loaded FID](/images/ssNake-howto/FID_loaded.jpg "Raw FID after loading a Varian dataset.")
 
-The most common processing functionalities are found in the Tools and Matrix tabs
+The most common processing functionalities are found in the Tools and Matrix tabs. For the current example we will truncate the FID after 1024 points using `Matrix --> Sizing` and after applying the changes by clicking on "ok" perform a zero-filling up to 2048 points. The resulting FID looks like this:
+
+![sized FID](/images/ssNake-howto/FID_sized.jpg "Title")
 
 # Fitting 
 
