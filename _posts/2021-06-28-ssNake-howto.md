@@ -26,7 +26,6 @@ git clone https://github.com/smeerten/ssnake.git ssNakeDir
 (or simply)
 
 git clone https://github.com/smeerten/ssnake.git
-
 ````
 After downloading you can simply navigate to "src" folder inside the installation folder and execute ssNake.py with Python:
 
