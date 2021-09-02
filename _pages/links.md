@@ -21,6 +21,8 @@ NMR
 
  - [dieter-freude.de/quad-nmr/](https://www.dieter-freude.de/quad-nmr/) - Updated review on quadrupolar NMR from Dieter Freude and extensive [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{27}$O nuclei. 
 
+ - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
+
  - [CSA Tensor Convention Calculator](http://anorganik.uni-tuebingen.de/klaus/nmr/index.php?p=conventions/csa/csa) - Homepage of Klaus Eichele, providing an online tool for calculating CSA tensors in different conventions.
 
  - [bryanhanson.github.io/FOSS4Spectroscopy/](https://bryanhanson.github.io/FOSS4Spectroscopy/) - List of free-and-open-source (FOSS) software for spectroscopy.

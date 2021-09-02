@@ -36,7 +36,7 @@ python3 ssNakeDir/src/ssnake.py
 # Processing data
 Once ssNake's GUI is loaded, you can open a new dataset via `File --> Open` which will either display an FID (like in my case) or a spectrum, depending on whether your data was already processed before or not. In this example I loaded a ^{29}Si MAS NMR experiment on lithium disilicate measured on a Varian machine:
 
-![Loaded FID](/images/ssNake_howto/FID_loaded.jpg "Raw FID after loading a Varian dataset.")
+![Loaded FID](/images/ssNake-howto/FID_loaded.jpg "Raw FID after loading a Varian dataset.")
 
 The most common processing functionalities are found in the Tools and Matrix tabs. For the current example I truncated the FID after 1024 points using `Matrix --> Sizing` and after applying the changes by clicking on "ok" performed a zero-filling up to 2048 points. The resulting FID looks like this:
 
@@ -66,7 +66,7 @@ Now it's time to correct the phase. `Tools --> Phasing -> Phase` will take you t
 
 At this point the spectrum looks already pretty decent. A baseline correction, however, will surely be useful in order to obtain a better lineshape deconvolution later. In ssNake, baseline corrections, accessible via `Tools --> Baseline Correction`, are implemented in a rather clever way. Instead of the often-encountered spline fitting tools encountered in other software, the baseline will be fitted using a polynomial or sine/cosine function. Conveniently you get to select which parts of the spectrum are to be ignored, namely all NMR signals. The latter is done by left-clicking once to mark the onset of an NMR signal and left-clicking a second time to span a region which is then marked in red. Lastly, the degree of the fitting function is defined - best chosen by trying around - and clicking on `Fit`. The result may then look similar to this:
 
-![Baseline correction](/images/ssNake-howto/Spec_phase.jpg "Applying a sine/cosine baseline correction.")
+![Baseline correction](/images/ssNake-howto/Spec_baselinecorr.jpg "Applying a sine/cosine baseline correction.")
 
 Now you are basically done. In my case, I find it convenient to additionally normalize my data with respect to the signal maximum which makes fitting the data easier afterwards:
 
