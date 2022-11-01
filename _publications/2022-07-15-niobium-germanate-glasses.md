@@ -1,5 +1,5 @@
 ---
-title: "Structural and luminescence characterization of europium-doped niobium germanate glasses and glass-ceramics: Novel insights from <sup>93Nb</sup> solid-state NMR spectroscopy"
+title: "Structural and luminescence characterization of europium-doped niobium germanate glasses and glass-ceramics: Novel insights from <sup>93</sup>Nb solid-state NMR spectroscopy"
 collection: publications
 permalink: /publication/2022-07-15-niobium-germanate-glasses
 excerpt: 'This paper reports for the first time clear NMR evidence for different NbO~6~ species in glasses.'
