@@ -13,5 +13,4 @@ Macroscopic materials with nanoscopic properties have recently been synthesized 
 
 [Download open-source paper here](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/chem.202102113)
 
-Recommended citation: Anna-Lena Wübker, Jonas Koppe, **Henrik Bradtmüller**, Lukas Keweloh, Damian Pleschka, Werner Uhl, Michael Ryan Hansen, Hellmut Eckert
-, Chem Eur. J. **2021**, *27*, 13249-13257.
+Recommended citation: Anna-Lena Wübker, Jonas Koppe, **Henrik Bradtmüller**, Lukas Keweloh, Damian Pleschka, Werner Uhl, Michael Ryan Hansen, Hellmut Eckert, Chem Eur. J. **2021**, *27*, 13249-13257.
