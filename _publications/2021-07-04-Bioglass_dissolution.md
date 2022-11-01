@@ -1,0 +1,16 @@
+---
+title: "Composition–Structure–Solubility Relationships in Borosilicate Glasses: Toward a Rational Design of Bioactive Glasses with Controlled Dissolution Behavior"
+collection: publications
+permalink: /publication/2021-07-04-Bioglass_dissolution
+excerpt: 'This paper is aimed at finding a rationale for composition-structure-solubility relationships in Borosilicate glasses.'
+date: 2021-07-04
+venue: 'Applied Materials & Interfaces'
+paperurl: 'https://doi.org/10.1021/acsami.1c07519'
+citation: 'Nicholas Stone-Weiss, <b>Henrik Bradtmüller</b>, Hellmut Eckert, Ashutosh Goel , “Composition–Structure–Solubility Relationships in Borosilicate Glasses: Toward a Rational Design of Bioactive Glasses with Controlled Dissolution Behavior ”, Applied Materials & Interfaces, <b>2021</b>, <i>13</i>, 27.'
+---
+Owing to their fast but tunable degradation kinetics (in comparison to silicates) and excellent bioactivity, the past decade has witnessed an upsurge in the research interest of borate/borosilicate-based bioactive glasses for their potential use in a wide range of soft tissue regeneration applications. Nevertheless, most of these glasses have been developed using trial-and-error approaches wherein SiO~2~ has been gradually replaced by B~2~O~3~. One major reason for using this empirical approach is the complexity of short-to-intermediate range structures of these glasses which greatly complicate the development of a thorough understanding of composition–structure–solubility relationships in these systems. Transitioning beyond the current style of composition design to a style that facilitates the development of bioactive glasses with controlled ion release tailored for specific patients/diseases requires a deeper understanding of the compositional/structural dependence of glass degradation behavior in vitro and in vivo. Accordingly, the present study aims to decipher the structural drivers controlling the dissolution kinetics and ion-release behavior of potentially bioactive glasses designed in the Na~2~O–B~2~O~3~–P~2~O~5~–SiO~2~ system across a broad compositional space in simulated body environments (pH = 7.4). By employing state-of-the-art spectroscopy-based characterization techniques, it has been shown that the degradation kinetics of borosilicate glasses depend on their R (Na~2~O/B~2~O~3~) and K (SiO~2~/B~2~O~3~) ratios, while the release of particular network-forming moieties from the glass into solution is strongly influenced by their role in—and effect on—the short-to-intermediate-range molecular structure. The current study aims to promote a rational design of borosilicate-based bioactive glasses, where a delicate balance between maximizing soft tissue regeneration and minimizing calcification and cytotoxicity can be achieved by tuning the release of ionic dissolution products (of controlled identity and abundance) from bioactive glasses into physiological media.
+
+[Download paper here](http://hbrmn.github.io/files/paper14.pdf)
+[Download SI here](http://hbrmn.github.io/files/paper14_SI.pdf)
+
+Recommended citation: Nicholas Stone-Weiss, **Henrik Bradtmüller**, Hellmut Eckert, Ashutosh Goel , “Composition–Structure–Solubility Relationships in Borosilicate Glasses: Toward a Rational Design of Bioactive Glasses with Controlled Dissolution Behavior ”, Applied Materials & Interfaces, **2021**, *13*, 27.'
