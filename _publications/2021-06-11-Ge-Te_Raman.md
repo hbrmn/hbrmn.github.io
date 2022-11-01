@@ -12,5 +12,5 @@ Alkali germanotellurite glasses of composition 0.3M2O-0.7[(1-x)GeO2-xTeO2], M=Li
 
 [Download paper here](http://hbrmn.github.io/files/paper13.pdf)
 
-Recommended citation: N.S. Tagiara, K.I. Chatzipanagis, **Henrik Bradtmüller**, , A.C.M. Rodrigues, D. Möncke, E.I. Kamitsos, “Network Former Mixing Effects in Alkali Germanotellurite Glasses: 
+Recommended citation: N.S. Tagiara, K.I. Chatzipanagis, **Henrik Bradtmüller**, A.C.M. Rodrigues, D. Möncke, E.I. Kamitsos, “Network Former Mixing Effects in Alkali Germanotellurite Glasses:
 A Vibrational Spectroscopic Study ”, Journal of Alloys and Compounds, **2021**, *882*, 160782.
