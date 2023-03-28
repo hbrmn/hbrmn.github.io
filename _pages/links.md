@@ -1,13 +1,15 @@
 ---
-title: "Links"
+title: "Mentions of my work in the media"
 layout: archive
 permalink: /links/
 author_profile: true
 ---
-Mentions of my work in the media
-======
-On ceramics.org, the website of [The American Ceramic Society](https://ceramics.org/ceramic-tech-today/glass-1/new-solid-state-nmr-strategy-cracks-open-the-black-box-of-crystal-nucleation-in-glass).
 
+
+ - ceramics.org, the website of [The American Ceramic Society](https://ceramics.org/ceramic-tech-today/glass-1/new-solid-state-nmr-strategy-cracks-open-the-black-box-of-crystal-nucleation-in-glass).
+
+Links
+======
 
 Below you can find some useful things related to Glass, NMR, and Data Science.
 
