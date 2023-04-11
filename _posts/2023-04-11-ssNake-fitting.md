@@ -1,9 +1,9 @@
 ---
-title: 'NMR data processing with ssNake'
+title: 'NMR data fitting with ssNake'
 date: 2023-04-11
-permalink: /posts/2021/08/2021-06-28-ssnake-howto/
+permalink: /posts/2021/08/2023-04-11-ssnake-howto-fit/
   - NMR
-  - processing
+  - fitting
   - how-to
 ---
 

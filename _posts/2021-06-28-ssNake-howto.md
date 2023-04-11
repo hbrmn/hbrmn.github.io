@@ -1,7 +1,7 @@
 ---
 title: 'NMR data processing with ssNake'
 date: 2023-04-11
-permalink: /posts/2021/08/2021-06-28-ssnake-howto/
+permalink: /posts/2021/08/2021-06-28-ssnake-howto-processing/
   - NMR
   - processing
   - how-to
