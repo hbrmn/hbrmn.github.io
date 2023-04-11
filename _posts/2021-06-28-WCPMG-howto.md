@@ -7,6 +7,7 @@ permalink: /posts/2021/08/2021-06-28-WCPMG-howto/
   - WCPMG
   - how-to
 ---
+# Setting up WCPMG experiments
 
 Here, I will demonstrate how to setup a WCPMG experiment and lay out the usual thought process when deciding which parameters to use.
 

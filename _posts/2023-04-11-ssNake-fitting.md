@@ -7,7 +7,7 @@ permalink: /posts/2021/08/2021-06-28-ssnake-howto/
   - how-to
 ---
 
-# Fitting 
+# Fitting with ssNake
 
 After you are satisfied with the processing of your dataset you can try to fit the spectrum using a number of built-in functions:
 
