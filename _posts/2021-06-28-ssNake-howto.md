@@ -44,7 +44,7 @@ The most common processing functionalities are found in the Tools and Matrix tab
 
 A window function can be applied via `Tools --> Apodize`. In the current example I applied roughly a Gaussian windowsfunction with roughly 100 Hz of width. Note how the window function is displayed in green and the raw FID remains as a gray shade:
 
-![apodized FID](/images/ssNake-howto/FID_sized.jpg "Applying a Gaussian windows function.")
+![apodized FID](/images/ssNake-howto/FID_apodization.jpg "Applying a Gaussian windows function.")
 
 Lastly, I shifted the FID six points to the left via `Matrix --> Shift Data`:
 
