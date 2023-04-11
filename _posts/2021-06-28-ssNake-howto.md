@@ -34,7 +34,7 @@ python3 ssNakeDir/src/ssnake.py
 ````
 
 # Processing data
-Once ssNake's GUI is loaded, you can open a new dataset via `File --> Open` which will either display an FID (like in my case) or a spectrum, depending on whether your data was already processed before or not. In this example I loaded a ^{29}Si MAS NMR experiment on lithium disilicate measured on a Varian machine:
+Once ssNake's GUI is loaded, you can open a new dataset via `File --> Open` which will either display an FID (like in my case) or a spectrum, depending on whether your data was already processed before or not. In this example I loaded a $^{29}$Si MAS NMR experiment on lithium disilicate measured on a Varian machine:
 
 ![Loaded FID](/images/ssNake-howto/FID_loaded.jpg "Raw FID after loading a Varian dataset.")
 
