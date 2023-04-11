@@ -6,10 +6,7 @@ permalink: /posts/2021/08/2023-04-11-ssnake-howto-fit/
   - fitting
   - how-to
 ---
-
-# Fitting with ssNake
-
-After you are satisfied with the processing of your dataset you can try to fit the spectrum using a number of built-in functions:
+In the following I will demonstrate the basic steps for fitting NMR spectra using ssNake. After you are satisfied with the processing of your dataset you can try to fit the spectrum using a number of built-in functions:
 
  - Lorentian/Gaussian 
  - CSA
@@ -33,6 +30,7 @@ After zooming in and setting the frequency axis to "ppm" we chose the `Lorentzia
 ![Fit Selection](/images/ssNake-howto/Fit-selection.jpg "Fit selection")
 
 We are presented with a new window below our spectrum comprised of two parts. On the left, we find several buttons for simulating the fit model based on the defined parameters (sim), fitting the spectrum (fit) according to the cost function defined in the Preferences tab, functions to copy and export fit parameters and curves (Copy par. and Export/Import) and a functionality to exclude certain spectral regions from the fitting algorithm.
+
 ![Fitting window](/images/ssNake-howto/fitting-window.jpg "Fitting window")
 
 On the right side, we see the currently defined fit components (one currently), defined by position, area (Integral), and Lorentz/Gauss character/width. Additionally, an extra offset and overall lineshape multiplier can be defined, however, I found to use it very little.

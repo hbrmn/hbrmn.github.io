@@ -6,7 +6,6 @@ permalink: /posts/2021/08/2021-06-28-ssnake-howto-processing/
   - processing
   - how-to
 ---
-# Processing NMR data with ssNake
 
 Below you can find some instructions on how to install and use [ssNake](https://www.ru.nl/science/magneticresonance/software/ssnake/), for processing and analyzing NMR data.
 
