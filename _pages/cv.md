@@ -11,7 +11,7 @@ redirect_from:
 
 Current Position
 ======
-* Post doctoral researcher at the Federal University of São Carlos, 2020 -
+* Post doctoral researcher at the Federal University of São Carlos, 2020 - Current
   * Topic: Elucidating structural rearrangements during glass relaxation and crystallization
   * Advisor: Prof. Dr. Edgar D. Zanotto
 
