@@ -1,17 +1,9 @@
 ---
-title: "Mentions of my work in the media"
+title: "Useful Links"
 layout: archive
 permalink: /links/
 author_profile: true
 ---
-
-
- - ceramics.org, the website of [The American Ceramic Society](https://ceramics.org/ceramic-tech-today/glass-1/new-solid-state-nmr-strategy-cracks-open-the-black-box-of-crystal-nucleation-in-glass).
-
- - Two significant contributions to [ssNake version 1.4](https://www.ru.nl/science/magneticresonance/software/ssnake/)
-
-Links
-======
 
 Below you can find some useful things related to Glass, NMR, and Data Science.
 
