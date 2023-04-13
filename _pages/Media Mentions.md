@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Mentions in the Media"
+title: "Mentions of my work in the Media"
 permalink: /media/
 author_profile: true
 redirect_from:
