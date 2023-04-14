@@ -10,9 +10,9 @@ redirect_from:
 About Me
 ======
 
-Hello there! My name is Henrik Bradtmüller, and I am a broadly trained Materials Scientist with a strong academic background in chemistry. My area of expertise is in solid-state nuclear magnetic resonance (NMR) spectroscopy, a field that is rapidly expanding and incredibly important in many industries and branches of academic research.
+Hello there! My name is Henrik Bradtmüller, and I am a broadly trained Materials Scientist with a strong academic background in chemistry. My area of expertise is in solid-state nuclear magnetic resonance (NMR) spectroscopy, a field that is rapidly expanding and important in many industries and branches of academic research.
 
-Currently, I am serving as a Postdoctoral Researcher at the esteemed Federal University of São Carlos. Specifically, I am proud to be a member of the Vitrous Materials Lab (LaMaV), a cutting-edge research group that is led by the renowned Professor Dr. Edgar Dutra Zanotto.
+Currently, I am serving as a Postdoctoral Researcher at the Federal University of São Carlos. Specifically, I am a member of the Vitrous Materials Lab (LaMaV), a cutting-edge research group that is led by Professor Dr. Edgar Dutra Zanotto.
 
 Through my work at LaMaV, I am continually expanding my knowledge and contributing to the development of new technologies and methods that will shape the future of materials science. I am very passionate about my work and am committed to using my skills and expertise to make a positive impact in the world.
 
@@ -20,7 +20,7 @@ Thank you for visiting my personal homepage. Please feel free to contact me if y
 
 My research interest
 ======
-II am currently focused on researching the structural changes that occur during the relaxation and crystallization (or devitrification) of glasses. My aim is to understand the critical factors that govern the survival or death of the vitreous state. This is an essential area of study because, once the first crystal nucleus is formed, the crystallization of glass becomes a spontaneous and unstoppable process. Despite decades of research in this field, many questions concerning the mechanisms and kinetics of the crystallization process remain unanswered. However, these questions are of fundamental importance to glass science and all technologies that rely on it.
+I am currently focused on researching the structural changes that occur during the relaxation and crystallization (or devitrification) of glasses. My aim is to understand the critical factors that govern the survival or death of the vitreous state. This is an essential area of study because, once the first crystal nucleus is formed, the crystallization of glass becomes a spontaneous and unstoppable process. Despite decades of research in this field, many questions concerning the mechanisms and kinetics of the crystallization process remain unanswered. However, these questions are of fundamental importance to glass science and all technologies that rely on it.
 
 The significance of understanding the stability of glasses becomes even more apparent when we consider how much they have become an integral part of our daily lives. Glasses are now indispensable to most modern technologies, from smartphones and computer screens to the windows in our homes and cars. Moreover, many people rely on glasses or contact lenses to correct their vision, making them an essential tool for millions of individuals around the world.
 
