@@ -19,7 +19,7 @@ redirect_from:
 
  ![Mention2](/images/mention1.jpg "Mention on SBPMat.org"){: width="50%" }
 
- - Agência (FAPESP](https://agencia.fapesp.br/estudo-explica-o-papel-de-certos-tipos-de-oxidos-na-estrutura-e-desenvolvimento-de-vidros-especiais/41986/)
+ - Agência FAPESP](https://agencia.fapesp.br/estudo-explica-o-papel-de-certos-tipos-de-oxidos-na-estrutura-e-desenvolvimento-de-vidros-especiais/41986/)
 
  ![Mention5](/images/mention5.jpg "Mention on Agencia FAPESP"){: width="50%" }
 
