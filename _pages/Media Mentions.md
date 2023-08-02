@@ -11,6 +11,10 @@ redirect_from:
 
  ![Mention1](/images/mention2.jpg "Mention on Ceramics.org"){: width="50%" }
 
+ - and [here](https://ceramics.org/ceramic-tech-today/basic-science/unveiling-the-hidden-role-of-intermediate-oxides-in-glass/).
+ 
+ ![Mention4](/images/mention4.jpg "Mention on Ceramics.org"){: width="50%" }
+
  - SBPMat.org, the website of the [Brazilian Materials Research Society](https://www.sbpmat.org.br/en/artigo-em-destaque-segredos-da-relaxacao-estrutural-dos-vidros-finalmente-revelados/)
 
  ![Mention2](/images/mention1.jpg "Mention on SBPMat.org"){: width="50%" }
