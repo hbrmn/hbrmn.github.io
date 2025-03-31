@@ -10,7 +10,7 @@ redirect_from:
 About Me
 ======
 
-<p>Hello there! I'm <span class="highlight">Henrik Bradtmüller</span>, a Materials Scientist with a strong foundation in chemistry and a passion for uncovering the atomic-level mysteries of glassy materials. My expertise lies in <span class="highlight">solid-state nuclear magnetic resonance (NMR) spectroscopy</span>, a powerful tool for probing disordered structures and advancing materials science in both academic and industrial applications.</p>
+<p>Hello there! I'm <span class="highlight"><strong>Henrik Bradtmüller</strong></span>, a Materials Scientist with a strong foundation in chemistry and a passion for uncovering the atomic-level mysteries of glassy materials. My expertise lies in <span class="highlight">solid-state nuclear magnetic resonance (NMR) spectroscopy</span>, a powerful tool for probing disordered structures and advancing materials science in both academic and industrial applications.</p>
 
 <p>Previously, I worked as a <span class="highlight">Postdoctoral Researcher</span> at the <span class="highlight">Federal University of São Carlos</span>, where I was part of the <span class="highlight">Vitreous Materials Lab (LaMaV)</span> under the guidance of <span class="highlight">Professor Dr. Edgar Dutra Zanotto</span>. There, I deepened my understanding of glass science while contributing to cutting-edge research on crystallization mechanisms and glass stability.</p>
 
