@@ -11,78 +11,54 @@ redirect_from:
 
 Current Position
 ======
-* Post doctoral researcher at the Federal University of São Carlos, 2020 - Current
-  * Topic: Elucidating structural rearrangements during glass relaxation and crystallization
-  * Advisor: Prof. Dr. Edgar D. Zanotto
+* **Assistant Professor of Physics**, São Carlos Institute of Physics (IFSC), University of São Paulo (2025–Present)  
+  * Research focus: Composition-structure-property relationships in bioactive glasses using solid-state NMR spectroscopy and computational methods.
 
 Education
 ======
-* Ph.D. in Physical Chemistry, Münster University, 2016 - 2019
-  * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*.
-  * Advisors: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
+* **Ph.D. in Physical Chemistry**, University of Münster (2016–2019)  
+  *Thesis:* Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy  
+  *Advisors:* [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html)
 
-* M.Sc. Chemistry, Münster University, 2014 - 2016
-  * Thesis: *Structural Characterisation of Cation Environments of Ion-Conducting Glass-Ceramics*.
-  * Advisor: [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
+* **M.Sc. Chemistry**, University of Münster (2014–2016)  
+  *Thesis:* Structural Characterisation of Cation Environments of Ion-Conducting Glass-Ceramics  
+  *Advisor:* [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html)
 
-* B.Sc. Chemistry, Leibniz University Hannover, 2011 - 2014
-  * Thesis: *Superstructures Based on Polymer-Coated Nanoparticles*.
-  * Advisor: [Prof. N.C. Bigall](https://www.chemie.uni-hamburg.de/en/institute/pc/arbeitsgruppen/bigall/personen/bigall-nadja.html).
+* **B.Sc. Chemistry**, Leibniz University Hannover (2011–2014)  
+  *Thesis:* Superstructures Based on Polymer-Coated Nanoparticles  
+  *Advisor:* [Prof. N.C. Bigall](https://www.chemie.uni-hamburg.de/en/institute/pc/arbeitsgruppen/bigall/personen/bigall-nadja.html)
 
-
-Work experience
+Research Experience
 ======
-* October 2016 - September 2020: Scientific Co-worker
-  * Institute of Physical Chemistry, University of Münster
-  * Supervisor: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/)
+* **Postdoctoral Researcher**, Federal University of São Carlos (2020–2024)  
+  - Investigated structural rearrangements during glass relaxation and crystallization  
+  - Developed advanced solid-state NMR methods for quadrupolar nuclei  
+  *Advisor:* [Prof. Edgar D. Zanotto](https://www.lamav.ufscar.br/)
 
-* March - August 2016: Scientific Research Assistant
-  * Institute of Physical Chemistry, University of Münster
-  * Supervisor: [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
+* **Scientific Co-worker**, University of Münster (2016–2020)  
+  - Performed structural characterization of functional glasses and glass-ceramics  
+  - Implemented novel NMR pulse sequences for materials characterization  
+  *Supervisor:* [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/)
 
-* February - April 2015: Student Research Assistant
-  * Institute for Molecular Cell Biology, University of Münster
-  * Topic: Investigation of avenues to synthesize gold nanowires via DNA Origami.
-  * Supervisor: [Prof R. Seidel](https://debye.physgeo.uni-leipzig.de/mbp/)
+* **Research Assistant**, University of Münster (2015–2016)  
+  - Conducted NMR studies of ion-conducting materials  
+  *Supervisor:* [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html)
 
-* March - June 2014: Student Research Assistant
-  * Institute of Inorganic Chemistry, Leibniz University Hannover (LUH)
-  * Topic: Computer-aided chemical modeling, model development and literature research.
-  * Supervisor: [Prof. P. Behrens](https://www.aci.uni-hannover.de/de/forschung/forschungsschwerpunkte/ag-behrens/)
-
-Skills
+Technical Skills
 ======
-* Expertise in synthesis and structural characterization of crystalline, semi-crystalline (glass-ceramics), and vitreous materials (glasses).
+* **Advanced Materials Characterization**  
+  - Solid-state NMR spectroscopy (MAS, CPMAS, MQMAS, REDOR, REAPDOR, WURST-RESPDOR, INADEQUATE, etc.)  
+  - X-ray diffraction (including Rietveld refinement)  
+  - Thermal analysis (DSC), Raman spectroscopy, impedance spectroscopy  
 
-* Expertise in Solid-State Nuclear Magnetic Resonance (NMR) spectroscopy:
-  * MAS
-  * CPMAS
-  * SATRAS and SATRAS difference spectroscopy
-  * WURST-RESPDOR
-  * REDOR
-  * REAPDOR
-  * INADEQUATE
-  * MQMAS
-  * WCPMG
-  * RESPDOR
-  * etc.
+* **Computational Methods**  
+  - NMR simulations (SIMPSON, mrsimulator)  
+  - Molecular dynamics (LAMMPS)  
+  - DFT calculations (CASTEP, Wien2k)  
 
-* Expertise in numerical computer simulations:
-  * SIMPSON
-  * mrsimulator
-  * LAMMPS
-  * Castep
-  * Wien2k
-
-* Fundamental knowledge of Origin Lab, Matlab, Wolfram Mathematica and Python for automated data processing and visualization.
-
-* Additional experience in:
-  * X-ray diffraction (XRD) with database driven identification of unknown phases and Rietveld refinement
-  * Differential scanning calorimetry (DSC)
-  * Raman spectroscopy
-  * UV-Vis and Fluorescence spectroscopy
-  * Impedance spectroscopy
-  * Neutron diffraction experiments
+* **Data Analysis & Programming**  
+  - Python, MATLAB, Wolfram Mathematica  
+  - OriginLab for scientific visualization  
 
 Publications
 ======
