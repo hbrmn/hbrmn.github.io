@@ -17,11 +17,9 @@ Labs
 NMR
 ======
 
- - [pascal-man.com/](https://www.pascal-man.com/) - Homepage of Pascal Man. Many NMR resources - principally on quadrupolar nuclei - can be found there. 
+ - [pascal-man.com/](https://www.pascal-man.com/) - Homepage of Pascal Man. Many NMR resources - principally on quadrupolar nuclei - can be found there.
 
  - [dieter-freude.de/quad-nmr/](https://www.dieter-freude.de/quad-nmr/) - Updated review on quadrupolar NMR from Dieter Freude and extensive [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{27}$O nuclei.
-
- - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
 
  - [CSA Tensor Convention Calculator](http://anorganik.uni-tuebingen.de/klaus/nmr/index.php?p=conventions/csa/csa) - Homepage of Klaus Eichele, providing an online tool for calculating CSA tensors in different conventions.
 
@@ -29,10 +27,15 @@ NMR
 
  - [spindynamics.org](https://spindynamics.org/group/?page_id=18) - Website with NMR lessons from Ilya Kuprov and more.
 
+  - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
+
 Materials Science
 ======
+- [sciglass.uni-jena.de](https://sciglass.uni-jena.de/) - Revamp of the sciglass database by people from University of Jena.
 
 - [materialsproject.org](https://materialsproject.org) - Collection of applications for the calculation and exploration of materials, syntheses, phase diagrams and much more.
+
+- [ptable.com](https://ptable.com) - Very nice interactive period table with visual representation of lots of element properties.
 
 Data Science
 ======

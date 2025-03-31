@@ -10,31 +10,39 @@ redirect_from:
 About Me
 ======
 
-Hello there! My name is Henrik Bradtmüller, and I am a broadly trained Materials Scientist with a strong academic background in chemistry. My area of expertise is in solid-state nuclear magnetic resonance (NMR) spectroscopy, a field that is rapidly expanding and important in many industries and branches of academic research.
+Hello there! I’m Henrik Bradtmüller, a Materials Scientist with a strong foundation in chemistry and a passion for uncovering the atomic-level mysteries of glassy materials. My expertise lies in solid-state nuclear magnetic resonance (NMR) spectroscopy, a powerful tool for probing disordered structures and advancing materials science in both academic and industrial applications.
 
-Currently, I am serving as a Postdoctoral Researcher at the Federal University of São Carlos. Specifically, I am a member of the Vitrous Materials Lab (LaMaV), a cutting-edge research group that is led by Professor Dr. Edgar Dutra Zanotto.
+Previously, I worked as a Postdoctoral Researcher at the Federal University of São Carlos, where I was part of the Vitreous Materials Lab (LaMaV) under the guidance of Professor Dr. Edgar Dutra Zanotto. There, I deepened my understanding of glass science while contributing to cutting-edge research on crystallization mechanisms and glass stability.
 
-Through my work at LaMaV, I am continually expanding my knowledge and contributing to the development of new technologies and methods that will shape the future of materials science. I am very passionate about my work and am committed to using my skills and expertise to make a positive impact in the world.
+As of 2025, I’m thrilled to announce that I’ve transitioned into a new role as an Assistant Professor of Physics at the São Carlos Institute of Physics (IFSC), part of the University of São Paulo (USP). In this position, I’ll continue pushing the boundaries of materials characterization while expanding my research into bioactive glasses and their composition-structure-property relationships.
 
-Thank you for visiting my personal homepage. Please feel free to contact me if you have any questions or would like to learn more about my work.
+I’m deeply committed to using my skills to solve fundamental scientific challenges and develop innovative technologies. Thank you for visiting my website — feel free to reach out if you’d like to collaborate or learn more about my work!
 
 My research interest
 ======
-I am currently focused on researching the structural changes that occur during the relaxation and crystallization (or devitrification) of glasses. My aim is to understand the critical factors that govern the survival or death of the vitreous state. This is an essential area of study because, once the first crystal nucleus is formed, the crystallization of glass becomes a spontaneous and unstoppable process. Despite decades of research in this field, many questions concerning the mechanisms and kinetics of the crystallization process remain unanswered. However, these questions are of fundamental importance to glass science and all technologies that rely on it.
+Glasses are among the most versatile yet least understood materials. Despite their ubiquity — from smartphone screens to optical fibers — key questions about their atomic structure, stability, and crystallization behavior remain unanswered. My research seeks to unravel these mysteries, particularly focusing on:
 
-The significance of understanding the stability of glasses becomes even more apparent when we consider how much they have become an integral part of our daily lives. Glasses are now indispensable to most modern technologies, from smartphones and computer screens to the windows in our homes and cars. Moreover, many people rely on glasses or contact lenses to correct their vision, making them an essential tool for millions of individuals around the world.
+1. The vitreous state and its collapse: What atomic-scale factors determine whether a glass survives or crystallizes? Once nucleation begins, crystallization becomes inevitable—yet we still lack a complete picture of the mechanisms driving this process.
 
-Beyond their ubiquitous use, glasses also play a crucial role in ensuring that our internet and communication networks remain fast, reliable, and efficient. Additionally, extensive scientific and corporate research has enabled us to develop new types of glasses and tailor their physical, chemical, and mechanical properties in detailed and sophisticated ways.
+2. Network modifiers in glasses: Alkali and alkaline-earth oxides (e.g., Li<sup>2</sup>O, Na<sup>2</sup>O, CaO) play critical roles in glass properties, but their intermediate-range ordering (~3–5 Å) is notoriously difficult to probe. My work develops advanced solid-state NMR strategies to tackle these challenges, especially for quadrupolar nuclei.
 
-By continuing to explore the science behind glasses, we can continue to unlock new possibilities for this fascinating and essential material. I am excited to be a part of this research and to contribute to our understanding of the vitreous state and the role that glasses play in our lives.
+3. Bioactive glasses: In my new role at IFSC/USP, I’m expanding my focus to composition-structure-property relationships in bioactive glasses. By combining NMR with computational methods, I aim to design next-generation materials for medical and technological applications.
+
+Understanding glass stability isn’t just academically fascinating — it’s essential for the technologies underpinning modern life. From faster internet via optical fibers to biomedical implants, glasses are irreplaceable. By refining our atomic-scale knowledge, we can unlock new functionalities and applications for this extraordinary material.
 
 My current work
 ======
-The advancement of fundamental glass research has progressed much more slowly than the rapid discovery of new glasses. In the past, significant leaps forward in understanding glass structure were only made upon discovering completely new analytical methods, which often took years or even decades to develop. While many methods have contributed to our understanding of glasses, the advent of nuclear magnetic resonance (NMR) spectroscopy has particularly advanced the field. NMR spectroscopy enables us to probe the disordered structure of glasses at the atomic level.
+Historically, breakthroughs in glass science have relied on the development of entirely new analytical techniques — a slow and unpredictable process. Solid-state NMR spectroscopy revolutionized the field by enabling atomic-level insights into disordered structures, but significant gaps remain, particularly for network-modifying elements.
 
-Recent research has shown that information on the intermediate-range scale ordering (on a length scale of about 3 to 5 Å) may be crucial to understanding how a glass crystallizes. Unfortunately, obtaining structural information on this length scale is particularly difficult for glass network modifiers (often alkaline or alkaline-earth oxides such as Li<sub>2</sub>O, Na<sub>2</sub>O, CaO, MgO, etc.), even with NMR spectroscopy.
+My research bridges these gaps by:
 
-Therefore, my primary research focus is on developing novel characterization strategies for glasses. Specifically, I am pushing the boundaries of the current state-of-the-art methods of solid-state NMR spectroscopy. This involves developing strategies to address the spectroscopic challenges posed by quadrupolar nuclei, which include most glass network modifiers. Through these efforts, I aim to enhance our understanding of glass structures at the atomic level and ultimately contribute to the discovery of new glasses with unique properties and applications.
+1. Developing novel NMR methods to study quadrupolar nuclei (e.g., <sup>23Na</sup>, <sup>27Al</sup>, <sup>17O</sup>), which are abundant in glass modifiers but difficult to analyze.
+
+2. Integrating computational modeling with experimental data to decode structure-property relationships in bioactive and functional glasses.
+
+3. Collaborating across disciplines to translate fundamental discoveries into real-world applications, from durable materials to biomedical devices.
+
+At IFSC/USP, I’m excited to build a research program that merges NMR spectroscopy with emerging computational tools, fostering innovation in glass science while training the next generation of materials researchers.
 
 
 

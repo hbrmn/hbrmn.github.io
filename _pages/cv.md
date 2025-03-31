@@ -18,16 +18,16 @@ Current Position
 Education
 ======
 * Ph.D. in Physical Chemistry, Münster University, 2016 - 2019
-  * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*. 
+  * Thesis: *Structure-Property Relationships in Glasses and Glass-Ceramics Characterized by Solid-State NMR Spectroscopy*.
   * Advisors: [Prof. H. Eckert](http://www.ifsc.usp.br/lemaf/) and [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
 
 * M.Sc. Chemistry, Münster University, 2014 - 2016
-  * Thesis: *Structural Characterisation of Cation Environments of Ion-Conducting Glass-Ceramics*. 
+  * Thesis: *Structural Characterisation of Cation Environments of Ion-Conducting Glass-Ceramics*.
   * Advisor: [Prof. M.R. Hansen](https://www.uni-muenster.de/Chemie.pc/forschung/hansen/group/index.html).
 
 * B.Sc. Chemistry, Leibniz University Hannover, 2011 - 2014
-  * Thesis: *Superstructures Based on Polymer-Coated Nanoparticles*. 
-  * Advisor: [Prof. N.C. Bigall](https://www.pci.uni-hannover.de/en/research/research-groups/bigall-group/).
+  * Thesis: *Superstructures Based on Polymer-Coated Nanoparticles*.
+  * Advisor: [Prof. N.C. Bigall](https://www.chemie.uni-hamburg.de/en/institute/pc/arbeitsgruppen/bigall/personen/bigall-nadja.html).
 
 
 Work experience
@@ -54,17 +54,34 @@ Skills
 ======
 * Expertise in synthesis and structural characterization of crystalline, semi-crystalline (glass-ceramics), and vitreous materials (glasses).
 
-* Expertise in Solid-State Nuclear Magnetic Resonance (NMR) spectroscopy: Advanced mono- and bi-dimensional methods based on high-resolution single and double-resonance techniques (MAS, CPMAS, SATRAS, MQMAS, REDOR, REAPDOR, INADEQUATE, WCPMG, RESPDOR etc.).
+* Expertise in Solid-State Nuclear Magnetic Resonance (NMR) spectroscopy:
+  * MAS
+  * CPMAS
+  * SATRAS and SATRAS difference spectroscopy
+  * WURST-RESPDOR
+  * REDOR
+  * REAPDOR
+  * INADEQUATE
+  * MQMAS
+  * WCPMG
+  * RESPDOR
+  * etc.
 
-* Expertise in numerical computer simulations for NMR experiments (SIMPSON).
+* Expertise in numerical computer simulations:
+  * SIMPSON
+  * mrsimulator
+  * LAMMPS
+  * Castep
+  * Wien2k
 
 * Fundamental knowledge of Origin Lab, Matlab, Wolfram Mathematica and Python for automated data processing and visualization.
 
-* Basic experience in:
+* Additional experience in:
   * X-ray diffraction (XRD) with database driven identification of unknown phases and Rietveld refinement
   * Differential scanning calorimetry (DSC)
-  * Raman spectroscopy 
+  * Raman spectroscopy
   * UV-Vis and Fluorescence spectroscopy
+  * Impedance spectroscopy
   * Neutron diffraction experiments
 
 Publications

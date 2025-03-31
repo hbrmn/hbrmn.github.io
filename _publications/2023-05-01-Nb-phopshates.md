@@ -1,0 +1,18 @@
+---
+title: "Niobium incorporation into rare-earth doped aluminophosphate glasses: Structural characterization, optical properties, and luminescence"
+collection: publications
+permalink: /publication/2023-05-01-SCS-1393-B3
+excerpt: 'This paper reports the synthesis and characterization of luminescent Rare Earth (RE3+) doped phosphate glasses.'
+date: 2023-04-01
+venue: 'Ceramics International'
+paperurl: 'https://doi.org/10.1016/j.jnoncrysol.2023.122173'
+citation: 'Jose Henrique Faleiro, Noelio O. Dantas, Anielle C.A. Silva, Helliomar P. Barbosa, Bruno H. S.T. da Silva, Karmel de O. Lima, Guilherme de Freitas Silva, Rogeria Rocha Gonçalves, Rodrigo Falci , Youn`es Messadeq, Isabela Dias de Oliveira Branco, Bianca M. Cerrutti, <b>Henrik Bradtmüller</b>, Hellmut Eckert, Jefferson Luis Ferrari, "Niobium incorporation into rare-earth doped aluminophosphate glasses: Structural characterization, optical properties, and luminescence", Ceramics International, <b>2023</b>, <i>605</i>, 122173.'
+
+---
+During the last few decades, considerable progress has been made in designing novel boron-containing bioglasses for soft tissue regeneration applications. For this purpose,  onventional glass synthesis procedures such as melt quenching and sol-gel synthesis have been explored extensively. However, both methods are time and energyconsuming
+and need expensive materials and equipment. The current study demonstrates that straightforward and low-cost solution combustion synthesis (SCS) can produce highly porous 1393-B3 borate-based glasses employing urea and sucrose as novel fuels. Thermal analysis shows that the glass transition temperatures of the produced specimens are between 650 and 680 °C. X-ray diffraction (XRD) and field emission scanning electron microscopy (FESEM) were used to confirm the absence of crystalline impurity phases and to show the highly
+porous microstructure of the glasses, respectively. The effect of the initial synthesis temperature (T<sub>0</sub>) on the glass structure of the obtained powders was investigated in detail via vibrational and NMR spectroscopies. The results indicate that optimum T<sub>0</sub> values are achieved at temperatures ranging from 500 to 700 °C using urea and 400–750 °C using sucrose as fuel. Increasing the temperature beyond these limits results in the partial devitrification of the parent glass. FT-IR, Raman, <sup>11</sup>B MAS, and 3QMAS NMR spectroscopies demonstrate that the glass structure is dominated by multiple distinct BO<sub>4</sub> and BO<sub>3</sub> units, i.e., neutral (B<sup>3n</sup>) and anionic (B<sup>3a</sup>, B<sup>4</sup>) borate units. Increasing T<sub>0</sub> values reduce the fraction of the four-coordinated boron (N<sub>4</sub>) from about 60 to 35% under the transformation of B<sup>4</sup> units into B<sup>3a</sup> units, while the overall amount of neutral B<sup>3</sup> species stays nearly constant. The possibility of fine-tuning the boron speciation in the resulting glasses through the synthesis parameters demonstrates that SCS is a promising process for the scalable production of 1393-B3 glass powders with tailored physical properties.
+
+[Download paper here](http://hbrmn.github.io/files/paper22.pdf)
+
+Recommended citation: Jose Henrique Faleiro, Noelio O. Dantas, Anielle C.A. Silva, Helliomar P. Barbosa, Bruno H. S.T. da Silva, Karmel de O. Lima, Guilherme de Freitas Silva, Rogeria Rocha Gonçalves, Rodrigo Falci , Younes Messadeq, Isabela Dias de Oliveira Branco, Bianca M. Cerrutti, **Henrik Bradtmüller**, Hellmut Eckert, Jefferson Luis Ferrari, "Niobium incorporation into rare-earth doped aluminophosphate glasses: Structural characterization, optical properties, and luminescence", Ceramics International, **2023**, *605*, 122173.
