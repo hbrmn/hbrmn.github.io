@@ -10,9 +10,25 @@ Below you can find some useful things related to Glass, NMR, and Data Science.
 Labs
 ======
 
- - [www.certev.ufscar.br/en](https://www.certev.ufscar.br/en) - Homepage of my current lab.
+ - [www.ifsc.usp.br/lemaf/](https://www.ifsc.usp.br/lemaf/) - Hompage of my lab.
 
- - [www.ifsc.usp.br/lemaf/](https://www.ifsc.usp.br/lemaf/) - Hompage of my current NMR lab.
+ - [www.certev.ufscar.br/en](https://www.certev.ufscar.br/en) - Homepage of my former lab.
+
+Glass and NMR Conferences
+======
+- [Borate-Phosphate](https://boratephosphate.sciencesconf.org/)
+
+- [GOMD](https://ceramics.org/event/16th-pacific-rim-conference-on-ceramic-and-glass-technology-including-glass-optical-materials-division-meeting-gomd-2025/)
+
+- [DGG](https://www.hvg-dgg.de/98gtc)
+
+- [SBPMat](https://www.sbpmat.org.br/23encontro/)
+
+- [AUREMN](https://auremn.org/wp/pt/2016-xiv-jornada-vitoria/#)
+
+- [Rocky Mountains Conference](https://rockychem.com/)
+
+- [Alpine Conference](https://alpine-conference.org/)
 
 NMR
 ======
