@@ -43,7 +43,7 @@ NMR
 
  - [spindynamics.org](https://spindynamics.org/group/?page_id=18) - Website with NMR lessons from Ilya Kuprov and more.
 
-  - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
+ - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
 
 Materials Science
 ======
