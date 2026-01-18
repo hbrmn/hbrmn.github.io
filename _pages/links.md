@@ -45,6 +45,8 @@ NMR
 
  - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
 
+ - [Website of the AMPERE society](https://www.ampere-society.org/)
+
 Materials Science
 ======
 - [sciglass.uni-jena.de](https://sciglass.uni-jena.de/) - Revamp of the sciglass database by people from University of Jena.
@@ -65,7 +67,7 @@ Data Science
 Others
 ======
 
- - [personal.sron.nl/~pault/](https://personal.sron.nl/~pault/) - Article about optimized color schemes for figures in scientific publications. Works well together with the [palettable](https://jiffyclub.github.io/palettable/) package for Python.
+ - [sronpersonalpages.nl/~pault/](https://sronpersonalpages.nl/~pault//) - Article about optimized color schemes for figures in scientific publications. Works well together with the [palettable](https://jiffyclub.github.io/palettable/) package for Python.
 
  - [passwordsgenerator.net/](https://passwordsgenerator.net/) - Online password generator.
 
