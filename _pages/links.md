@@ -90,3 +90,5 @@ Others
  - [backgroundchecks.org/justdeleteme/](https://backgroundchecks.org/justdeleteme/) - Collection of links to facilitate deletion of online accounts.
 
  - [dlmf.nist.gov/10](https://dlmf.nist.gov/10) - Collection of Bessel functions.
+ 
+ -[https://www.feynmanlectures.caltech.edu/](https://www.feynmanlectures.caltech.edu/) - Feynman lectures online
