@@ -12,156 +12,102 @@ tags:
   - Czjzek
 ---
 
-**Working draft:** The example dataset, screenshots, and final fit parameters are still being prepared. The workflow below has not yet been validated here against a specific ssNake release.
+**Working draft:** Example data, screenshots, and final fit parameters are still in preparation. This workflow has not yet been checked against a specific ssNake release.
 
-Quadrupolar NMR spectra of glasses and other disordered solids often cannot be described by a single set of quadrupolar parameters. Instead, the local environment varies from one nucleus to another, producing distributions of the quadrupolar coupling constant, $C_Q$, and the asymmetry parameter, $\eta_Q$. In this tutorial, I will show how such spectra can be fitted in [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) using the Czjzek model.
+Quadrupolar spectra of glasses often reflect distributions of local environments rather than a single quadrupolar coupling constant, $C_Q$, and asymmetry parameter, $\eta_Q$. This guide introduces Czjzek fitting in [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake), starting from a processed spectrum. For earlier steps, see [data processing]({{ '/posts/2021/08/2021-06-28-ssnake-howto-processing/' | relative_url }}) and [basic fitting]({{ '/posts/2021/08/2023-04-11-ssnake-howto-fit/' | relative_url }}).
 
-The tutorial starts from an already processed spectrum. If your data still require Fourier transformation, phasing, or other basic processing, first see my tutorial on [NMR data processing with ssNake](/posts/2021/08/2021-06-28-ssnake-howto-processing/).
+## Choose the model
 
-## What does a Czjzek fit describe?
+The **standard Czjzek model** describes a statistical distribution of electric-field-gradient tensors with no fixed, nonzero tensor contribution. Its width parameter, $\sigma$, controls the spread of quadrupolar interactions.
 
-A conventional quadrupolar simulation assigns one $C_Q$ and one $\eta_Q$ value to each site. This is often suitable for a well-defined crystallographic environment but is usually too restrictive for a disordered material.
+The **extended model** adds a fixed local contribution described by $C_Q^0$ and $\eta_Q^0$. It can represent disorder around a nonzero underlying interaction. Use it when both the spectrum and structural knowledge justify the additional parameters; a smaller residual alone is not sufficient.
 
-The standard Czjzek model instead describes a statistical distribution of electric-field-gradient tensors around an environment that would be symmetric before disorder is introduced. Its principal adjustable parameter is $\sigma$, which controls the width of the distribution. A larger $\sigma$ generally produces a broader distribution of $C_Q$ values.
+## 1. Prepare the spectrum
 
-The extended Czjzek model adds a non-zero, locally ordered contribution described by $C_Q^0$ and $\eta_Q^0$. It is therefore useful when the underlying site is already asymmetric and structural disorder produces an additional distribution around that environment.
+Open your processed spectrum with `File → Open`. The planned example uses `Czjzek_example`, which is not yet supplied here.
 
-This distinction matters: the standard and extended models are not merely two different mathematical lineshapes. They represent different assumptions about the local structure, and the more complicated model should only be used when it is justified by the data and by chemical knowledge of the sample.
+If needed, apply `Tools → Baseline Correction`, excluding all signal-containing regions. Broad quadrupolar intensity can resemble baseline curvature, so check that the correction does not remove real signal. Optional normalization through `Matrix → Normalize` keeps fitted integrals at a convenient scale. Set the axis to ppm if desired.
+
+Before simulation, verify the observed nucleus, spin, Larmor frequency, static or MAS conditions, spinning frequency, and transitions to include. Incorrect settings can produce plausible-looking fits with misleading parameters.
+
+## 2. Open the fitting panel
+
+Choose `Fitting → Czjzek`. The panel contains simulation, fitting, library, and export controls alongside the component parameters.
+
+**Checked boxes fix parameters; unchecked boxes allow them to vary during fitting.**
+
+| Parameter | Meaning and starting choice |
+| --- | --- |
+| `Pos` | Isotropic chemical shift; it need not coincide with the observed peak maximum |
+| `Integral` | Component scale; adjust to the experimental intensity |
+| $\sigma$ | Distribution width; estimate by simulation before optimization |
+| `Lorentz` / `Gauss` | Additional broadening; keep small initially |
+| $C_Q^0$ | Fixed local contribution in the extended model; use a physically motivated starting value |
+| $\eta_Q^0$ | Asymmetry of that contribution, between 0 and 1 |
+
+## 3. Generate the quadrupolar library
+
+ssNake first calculates powder patterns on a $C_Q$–$\eta_Q$ grid. It then combines them with Czjzek weights during fitting, avoiding repeated calculation of every pattern.
+
+Open `Library`, check the experimental settings, and define the grid. Match the static or MAS treatment to the experiment and include the relevant transitions and sidebands. A central-transition-only spectrum can be either static or MAS; transition selection does not determine the spinning treatment.
+
+A finer, wider grid costs more time and memory, but an inadequate grid can bias the fit. Choose limits that contain the distribution throughout the parameter range you expect to explore. For the extended model, account for both the distribution width and the fixed local contribution.
+
+Use `Show` to inspect the weights. They should decay before reaching the upper $C_Q$ boundary. Increase the range if they are cut off, then click `Generate`. Later, repeat the calculation with a wider or finer grid to check that the fitted result is stable.
+
+## 4. Simulate before fitting
+
+Set approximate values of `Pos`, `Integral`, and $\sigma$, then click `Sim`. Adjust one parameter at a time: position for alignment, width for the quadrupolar distribution, and integral for intensity. Add only the extra broadening needed beyond the quadrupolar model.
+
+Aim for a physically reasonable starting spectrum. If you increase $\sigma$ substantially, inspect the library weights again; the original grid may no longer cover the distribution.
+
+## 5. Refine the standard model
+
+Initially, vary `Pos`, `Integral`, and $\sigma$ while keeping additional broadening fixed. Click `Fit` and inspect the residual. Release broadening parameters in a later round if needed; varying everything at once can create strong correlations.
+
+Look for systematic errors at edges, shoulders, and sidebands rather than relying only on RMSD. Repeat the fit from different starting values to assess whether the solution is stable.
+
+## 6. Consider the extended model
+
+If a nonzero underlying interaction is physically expected and the standard model is inadequate, change `Type` to the extended model. Choose $C_Q^0$ and $\eta_Q^0$ from a related material or another justified estimate. Keep $\eta_Q^0$ fixed initially if the data cannot constrain it independently.
+
+Simulate before optimizing. You may need to reduce $\sigma$ because part of the spectral width is now described by the fixed local contribution. Recheck the library coverage after this change. Extended-model calculations can take longer, so refine the starting parameters in small steps.
+
+## 7. Validate and export
+
+Before reporting the result, check:
+
+- **Residual:** does it resemble noise, or contain a missing spectral feature?
+- **Library:** do wider limits and a finer grid leave the result essentially unchanged?
+- **Stability:** do different starting values lead to similar parameters?
+- **Interpretation:** are all components and broadening terms necessary and physically plausible?
+
+Component integrals are quantitative only when excitation and detection efficiencies are comparable. This is not guaranteed for broad quadrupolar spectra.
+
+Save parameters through `Export/Import`. Use `Curves to Workspace` to gather the experiment, components, total fit, and residual, then export with `File → Export → ASCII` or `CSV`. For a figure, use `File → Export → Figure`.
+
+Report the model, experimental conditions, library settings, and fitted parameters with the result. Further examples are available in the developers’ [tutorial collection](https://github.com/smeerten/ssnake_tutorials/tree/master/CzjzekFitting); the fitting software is described in the [ssNake paper](https://doi.org/10.1016/j.jmr.2019.02.006).
 
 <!-- SCREENSHOT 01: Optional schematic or ssNake comparison showing a single quadrupolar pattern, a standard Czjzek distribution, and an extended Czjzek distribution. -->
 
-## Load and prepare the spectrum
-
-Open your processed quadrupolar spectrum using `File → Open`. The planned worked example uses `Czjzek_example`, which is not yet supplied with this tutorial. For data already processed in TopSpin, only a few preparatory steps may be required.
-
-First, apply a baseline correction using `Tools --> Baseline Correction`. Exclude the signal-containing regions from the baseline fit and check that the correction does not remove broad spectral intensity. This is particularly important for disordered quadrupolar spectra, because a slowly varying part of the true lineshape can easily be mistaken for baseline curvature.
-
-Next, normalize the spectrum using `Matrix --> Normalize`. Normalization is not required by the Czjzek model, but it keeps the component integrals at manageable values and makes it easier to compare different trial fits. Finally, set the horizontal axis to ppm in the `Axis` tab if it is not already displayed in ppm.
-
 <!-- SCREENSHOT 02: The loaded and baseline-corrected Czjzek_example spectrum. Show the dataset name and ppm axis. Suggested filename: /images/ssNake-czjzek/Czjzek-spectrum-prepared.jpg -->
-
-Before fitting, note the experimental conditions that determine the simulated lineshape:
-
-- the observed nucleus and its spin quantum number;
-- the magnetic field or Larmor frequency;
-- whether the experiment was static or recorded under MAS;
-- the MAS frequency;
-- whether satellite transitions and spinning sidebands must be included.
-
-Most of this information is normally read from the dataset, but it is worth checking before generating a library. An incorrect field or MAS frequency may still produce a visually plausible fit with physically incorrect parameters.
-
-## Open the Czjzek fitting panel
-
-Choose `Fitting --> Czjzek`. The fitting panel appears below the spectrum. As in the other ssNake fitting routines, the left side contains the simulation, fitting, preference, exclusion, and export controls. The right side contains the parameters of the current fit component.
-
-Remember that a checked box fixes the corresponding parameter, whereas an unchecked box allows it to vary during fitting. This is easy to overlook and is one of the most common reasons for an apparently unresponsive fit.
 
 <!-- SCREENSHOT 03: Czjzek selected in the Fitting menu and the complete fitting panel visible. Suggested filename: /images/ssNake-czjzek/Czjzek-fitting-window.jpg -->
 
-The most important component parameters are:
-
-| Parameter | Meaning | Practical starting point |
-| --- | --- | --- |
-| `Pos` | Isotropic chemical-shift position of the site | Place it near the expected isotropic shift, not necessarily at the observed maximum of a second-order quadrupolar lineshape |
-| `Integral` | Scale or area of the component | Use a value comparable to the normalized experimental intensity and refine it during fitting |
-| $\sigma$ | Width of the Czjzek distribution | Start with a moderate value and adjust it by simulation before fitting |
-| `Lorentz` / `Gauss` | Additional homogeneous or inhomogeneous broadening | Keep small initially; excessive broadening can conceal an unsuitable quadrupolar distribution |
-| $C_Q^0$ | Ordered quadrupolar contribution in the extended model | Use a chemically reasonable value from a related crystalline or less-disordered material |
-| $\eta_Q^0$ | Asymmetry of the ordered contribution in the extended model | Restrict it to the physical interval from 0 to 1 |
-
-## Generate the quadrupolar library
-
-Czjzek fitting requires an additional step that is not needed for a simple Lorentzian or Gaussian fit. ssNake first calculates a library of quadrupolar powder patterns over a grid of $C_Q$ and $\eta_Q$ values. During simulation and fitting, these patterns are combined with weights defined by the selected Czjzek distribution. Pre-calculating the library makes the iterative fit much faster.
-
-Click `Library` in the fitting panel. In the library window, check the experimental settings and define the $C_Q$–$\eta_Q$ grid. For an MAS spectrum, choose the finite-MAS option, enter the experimental spinning frequency, and include enough spinning sidebands to cover all sidebands visible in the experimental spectral window. Choose static or MAS conditions to match the experiment, and select the transitions separately. A central-transition-only spectrum can be either static or MAS; central-transition selection does not by itself determine the spinning treatment.
-
 <!-- SCREENSHOT 04: Library-generation window with the experimental settings and CQ/eta grid highlighted. Suggested filename: /images/ssNake-czjzek/Czjzek-library-settings.jpg -->
-
-There is a trade-off when choosing the grid. A broad and finely spaced grid is more flexible and accurate, but requires more time and memory. A grid that is too narrow truncates the distribution and can bias the fitted value of $\sigma$. Choose a range wide enough to contain the distribution for all parameter values explored during the fit. The appropriate limit depends on the software’s definition of $\sigma$ and, for the extended model, the ordered contribution. Verify convergence by increasing the range and refining the grid; do not rely on a universal multiplier of $\sigma$.
-
-Click `Show` to display the distribution weights on the current $C_Q$–$\eta_Q$ grid. The intensity should decay well before it reaches the upper $C_Q$ boundary. If the contours are cut off at the edge, increase the maximum $C_Q$ and generate the library again.
 
 <!-- SCREENSHOT 05: A Czjzek weight distribution that fits comfortably inside the selected grid. Suggested filename: /images/ssNake-czjzek/Czjzek-library-valid.jpg -->
 
 <!-- SCREENSHOT 06: Optional comparison showing a distribution cut off by an inadequate CQ range. This would make the warning much easier to understand. Suggested filename: /images/ssNake-czjzek/Czjzek-library-truncated.jpg -->
 
-Once the experimental settings and grid are satisfactory, click `Generate`. Library generation may take some time. When it is complete, close the library window and return to the fitting panel.
-
-## Simulate before fitting
-
-It is tempting to click `Fit` immediately, but first obtaining a reasonable manual simulation makes the optimization faster and more reliable. Set an approximate `Pos`, `Integral`, and $\sigma$, and then click `Sim`.
-
-Adjust one parameter at a time and simulate again:
-
-- use `Pos` mainly to align the calculated and experimental spectra;
-- use $\sigma$ to adjust the extent and character of the quadrupolar distribution;
-- use `Integral` to match the overall intensity;
-- add only as much Lorentzian or Gaussian broadening as is needed to reproduce broadening not already described by the quadrupolar model.
-
-The goal at this stage is not a perfect match. It is to place the optimizer in a physically sensible region of parameter space.
-
 <!-- SCREENSHOT 07: First trial simulation overlaid with the experimental spectrum. Suggested filename: /images/ssNake-czjzek/Czjzek-first-simulation.jpg -->
-
-If you substantially increase $\sigma$, return to the `Library` window and click `Show` again. The library that was suitable for the starting value may no longer cover the distribution. If necessary, widen the $C_Q$ range and regenerate it before fitting.
-
-## Fit with the standard Czjzek model
-
-Decide which parameters should be optimized and uncheck their boxes. In a first round, it is usually sensible to vary only `Pos`, `Integral`, and $\sigma$, while keeping less important broadening parameters fixed. Click `Fit` and inspect the fitted spectrum and residual.
-
-If the fit is stable, the broadening terms can be released in a later round. This staged approach reduces correlations between $\sigma$, Gaussian broadening, and Lorentzian broadening. Allowing all parameters to vary from the beginning may improve the numerical residual while making the physical interpretation less reliable.
 
 <!-- SCREENSHOT 08: Result of the standard Czjzek fit, including experimental spectrum, total fit, component, and residual. Suggested filename: /images/ssNake-czjzek/Czjzek-standard-fit.jpg -->
 
-Do not judge the result from the RMSD alone. Look for systematic deviations in the central-transition edges, shoulders, and spinning sidebands. A residual with a clear lineshape indicates that the model is missing something, even when its numerical value appears small.
-
-## When should the extended Czjzek model be used?
-
-If the standard Czjzek distribution cannot reproduce the characteristic edges or sideband shapes, and there is a structural reason to expect an already asymmetric underlying environment, change `Type` from the standard to the extended Czjzek model. This activates $C_Q^0$ and $\eta_Q^0$.
-
-Choose physically motivated starting values. Parameters obtained for a related crystalline phase, an ordered analogue, or a less-disordered sample are often more useful than arbitrary guesses. Start by fixing $\eta_Q^0$ if there is not enough information to determine it independently, and release $C_Q^0$ only after a satisfactory manual simulation has been obtained.
-
-Because the extended distribution adds parameters and is computationally more demanding, click `Sim` after each substantial change. A calculation with $\eta_Q^0 \ne 0$ can be particularly slow.
-
 <!-- SCREENSHOT 09: Extended Czjzek controls with CQ0 and etaQ0 highlighted. Suggested filename: /images/ssNake-czjzek/Czjzek-extended-parameters.jpg -->
-
-After changing from the standard to the extended model, $\sigma$ may need to be reduced considerably: part of the width previously assigned to disorder may now be described by the non-zero ordered quadrupolar interaction. Check the distribution in the `Library` window once more, then click `Fit`.
 
 <!-- SCREENSHOT 10: Final extended Czjzek fit and residual. Suggested filename: /images/ssNake-czjzek/Czjzek-extended-fit.jpg -->
 
-## Check that the result is meaningful
-
-Before reporting the fitted parameters, I recommend the following checks:
-
-1. **Inspect the residual.** It should resemble noise rather than a missing spectral component.
-2. **Recheck the library limits.** The fitted distribution must not be truncated at the maximum $C_Q$ value.
-3. **Repeat the fit from different starting values.** Convergence to similar parameters provides more confidence that the result is not a local minimum.
-4. **Test whether all broadening terms are necessary.** Strong correlations between $\sigma$, Gaussian width, and Lorentzian width can make the solution non-unique.
-5. **Compare with chemical expectations.** Values of `Pos`, $C_Q^0$, $\eta_Q^0$, and $\sigma$ should remain physically plausible.
-6. **Prefer the simpler model when it is sufficient.** An improved residual does not by itself justify the additional parameters of an extended Czjzek distribution or a second site.
-
-The fitted integrals should also be interpreted carefully. They are directly quantitative only if the experimental excitation and detection efficiencies are equivalent for the components being compared. This is not automatically guaranteed for broad quadrupolar spectra.
-
-## Export the fit
-
-Use `Export/Import` to save the fitted parameters. To export the experimental spectrum, individual components, total fit, and residual together, choose `Curves to Workspace`. In the newly created workspace, set the axis to ppm and use `File --> Export --> ASCII` or `CSV`.
-
-For a publication-ready image, use `File --> Export --> Figure`. I normally show the experimental spectrum, total fit, individual components, and residual, while stating in the caption whether the standard or extended Czjzek model was used.
-
 <!-- SCREENSHOT 11: Curves-to-Workspace or final figure-export window. Suggested filename: /images/ssNake-czjzek/Czjzek-export.jpg -->
-
-## Workflow checklist
-
-The essential steps are:
-
-1. baseline-correct and normalize the processed spectrum;
-2. open `Fitting --> Czjzek`;
-3. generate a quadrupolar library using the correct field and MAS settings;
-4. verify that the $C_Q$–$\eta_Q$ grid contains the complete distribution;
-5. obtain a reasonable manual simulation before fitting;
-6. fit the standard Czjzek model first;
-7. use the extended model only when the spectrum and structural context justify it;
-8. validate the residual, library limits, parameter stability, and physical plausibility before exporting the result.
-
-Further examples are available in the official [ssNake tutorial collection](https://github.com/smeerten/ssnake_tutorials/tree/master/CzjzekFitting). The underlying fitting approach is described in the [ssNake software paper](https://doi.org/10.1016/j.jmr.2019.02.006).
 
 <!-- EDITORIAL NOTE (remove before publication): Replace every SCREENSHOT comment with the corresponding image once the workflow has been repeated with Czjzek_example. Add the actual nucleus, field, MAS rate, library limits, grid density, and final fitted parameters wherever useful. -->

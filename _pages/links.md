@@ -5,17 +5,15 @@ permalink: /links/
 author_profile: true
 ---
 
-Below you can find some useful things related to Glass, NMR, and Data Science.
+A collection of resources for glass science, NMR, and scientific computing. Conference links include past editions.
 
-Labs
-======
+## Research groups
 
- - [www.ifsc.usp.br/lemaf/](https://www.ifsc.usp.br/lemaf/) - Homepage of my lab.
+ - [LEMAF, IFSC/USP](https://www.ifsc.usp.br/lemaf/) - Solid-state NMR research at IFSC/USP.
 
- - [www.certev.ufscar.br/en](https://www.certev.ufscar.br/en) - Homepage of my former lab.
+ - [CeRTEV](https://www.certev.ufscar.br/en) - Center for research in vitreous materials.
 
-Glass and NMR Conferences
-======
+## Glass and NMR Conferences
 
 Some links below refer to past editions. Check the organizers’ websites for forthcoming meetings.
 
@@ -33,72 +31,67 @@ Some links below refer to past editions. Check the organizers’ websites for fo
 
 - [Alpine Conference](https://alpine-conference.org/)
 
-NMR Software
-======
+## NMR Software
 
 - [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) — source code and installation instructions. Official development moved here from GitHub starting with version 1.5.
 - [ssNake example tutorials](https://github.com/smeerten/ssnake_tutorials) — worked examples from the developers.
 - [My processing and fitting guides]({{ "/blog/" | relative_url }}) — practical walkthroughs with screenshots.
 
-NMR
-======
+## NMR
 
- - [pascal-man.com/](https://www.pascal-man.com/) - Homepage of Pascal Man. Many NMR resources - principally on quadrupolar nuclei - can be found there.
+ - [Pascal Man](https://www.pascal-man.com/) - Tutorials and references, particularly for quadrupolar NMR.
 
- - [dieter-freude.de/quad-nmr/](https://www.dieter-freude.de/quad-nmr/) - Updated review on quadrupolar NMR from Dieter Freude and extensive [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{17}$O nuclei.
+ - [Quadrupolar NMR](https://www.dieter-freude.de/quad-nmr/) - Dieter Freude’s quadrupolar NMR review and [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{17}$O nuclei.
 
- - [CSA Tensor Convention Calculator](http://anorganik.uni-tuebingen.de/klaus/nmr/index.php?p=conventions/csa/csa) - Homepage of Klaus Eichele, providing an online tool for calculating CSA tensors in different conventions.
+ - [CSA Tensor Convention Calculator](http://anorganik.uni-tuebingen.de/klaus/nmr/index.php?p=conventions/csa/csa) - Convert between chemical-shift tensor conventions.
 
- - [bryanhanson.github.io/FOSS4Spectroscopy/](https://bryanhanson.github.io/FOSS4Spectroscopy/) - List of free-and-open-source (FOSS) software for spectroscopy.
+ - [FOSS for Spectroscopy](https://bryanhanson.github.io/FOSS4Spectroscopy/) - Open-source spectroscopy software.
 
- - [spindynamics.org](https://spindynamics.org/group/?page_id=18) - Website with NMR lessons from Ilya Kuprov and more.
+ - [Spin Dynamics](https://spindynamics.org/group/?page_id=18) - NMR lectures by Ilya Kuprov.
 
  - [Website of Robert W. Schurko](https://www.chem.fsu.edu/~schurko/) and the [links listed on his old website.](http://schurko.cs.uwindsor.ca/Links/index.html)
 
  - [Website of the AMPERE society](https://www.ampere-society.org/)
 
-Materials Science
-======
-- [sciglass.uni-jena.de](https://sciglass.uni-jena.de/) - Revamp of the sciglass database by people from University of Jena.
+## Materials Science
+- [SciGlass](https://sciglass.uni-jena.de/) - Glass composition and property data.
 
-- [materialsproject.org](https://materialsproject.org) - Collection of applications for the calculation and exploration of materials, syntheses, phase diagrams and much more.
+- [Materials Project](https://materialsproject.org) - Tools for exploring materials and phase diagrams.
 
-- [ptable.com](https://ptable.com) - Very nice interactive period table with visual representation of lots of element properties.
+- [Ptable](https://ptable.com) - Interactive periodic table and element properties.
 
-Data Science
-======
+## Scientific computing
 
- - [i.am.ai/roadmap/#note](https://i.am.ai/roadmap/#note) - Roadmap to getting involved in artificial intelligence.
+ - [AI roadmap](https://i.am.ai/roadmap/#note) - Learning roadmap for artificial intelligence.
 
- - [https://www.theinsaneapp.com/](https://www.theinsaneapp.com/) - Curated and updated collection of blogs, books, and other resources around programming, machine-learning, and maths.
+ - [The Insane App](https://www.theinsaneapp.com/) - Programming, machine-learning, and mathematics resources.
 
- - [datascienceplus.com/understanding-the-covariance-matrix/](https://datascienceplus.com/understanding-the-covariance-matrix/) - Nice and short article on understanding and creating covariance matrices using Python.
+ - [Covariance matrices](https://datascienceplus.com/understanding-the-covariance-matrix/) - Introduction to covariance matrices in Python.
 
-Others
-======
+## Other tools
 
- - [sronpersonalpages.nl/~pault/](https://sronpersonalpages.nl/~pault//) - Article about optimized color schemes for figures in scientific publications. Works well together with the [palettable](https://jiffyclub.github.io/palettable/) package for Python.
+ - [Paul Tol’s color schemes](https://sronpersonalpages.nl/~pault//) - Color schemes for scientific figures; see also the [palettable](https://jiffyclub.github.io/palettable/) package for Python.
 
  - [passwordsgenerator.net/](https://passwordsgenerator.net/) - Online password generator.
 
- - [learnxinyminutes.com/](https://learnxinyminutes.com/) - Collection of concise tutorials of many programming languages and tools like Python, vim, git, R, and many more.
+ - [Learn X in Y Minutes](https://learnxinyminutes.com/) - Concise introductions to programming languages and tools.
 
- - [commonmark.org/](https://commonmark.org/) - Interactive markdown tutorial and cheat sheet.
+ - [CommonMark](https://commonmark.org/) - Interactive markdown tutorial and cheat sheet.
 
- - [learngitbranching.js.org/](https://learngitbranching.js.org/) - Interactive git tutorial.
+ - [Learn Git Branching](https://learngitbranching.js.org/) - Interactive git tutorial.
 
- - [vim-adventures.com/](https://vim-adventures.com/) - Interactive vim tutorial.
+ - [Vim Adventures](https://vim-adventures.com/) - Interactive vim tutorial.
 
- - [guides.github.com/activities/citable-code/](https://guides.github.com/activities/citable-code/) - Tutorial for creating DOIs for citable code repositories.
+ - [Citable code](https://guides.github.com/activities/citable-code/) - Guidance on citing code with a DOI.
 
- - [www.desmos.com/calculator](https://www.desmos.com/calculator) - Interactive web function plotter.
+ - [Desmos](https://www.desmos.com/calculator) - Interactive web function plotter.
 
- - [pi-hole.net/](https://pi-hole.net/) - DNS based network-wide ad-blocker that can be run from a Raspberry Pi, Smartphone, Docker container, or a computer.
+ - [Pi-hole](https://pi-hole.net/) - Network-wide DNS filtering.
 
- - [txti.es/](http://txti.es/) - Fast and easy generation of simple websites.
+ - [txti](http://txti.es/) - Fast and easy generation of simple websites.
 
- - [backgroundchecks.org/justdeleteme/](https://backgroundchecks.org/justdeleteme/) - Collection of links to facilitate deletion of online accounts.
+ - [JustDeleteMe](https://backgroundchecks.org/justdeleteme/) - Links to account-deletion instructions.
 
- - [dlmf.nist.gov/10](https://dlmf.nist.gov/10) - Collection of Bessel functions.
+ - [NIST Digital Library of Mathematical Functions](https://dlmf.nist.gov/10) - Reference for Bessel functions.
  
- - [https://www.feynmanlectures.caltech.edu/](https://www.feynmanlectures.caltech.edu/) - Feynman lectures online
+ - [Feynman Lectures](https://www.feynmanlectures.caltech.edu/) - The Feynman Lectures on Physics, online.

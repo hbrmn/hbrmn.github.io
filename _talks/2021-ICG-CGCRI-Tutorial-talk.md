@@ -8,7 +8,7 @@ date: 2021-01-27
 location: "Virtual"
 ---
 
-[Download talk here](https://hbrmn.github.io/files/talk0-ICG-CGCRI.pdf)
+[Download the slides](https://hbrmn.github.io/files/talk0-ICG-CGCRI.pdf)
 
-<br/><img src='/images/talk0-preview.png'>
+<img src="/images/talk0-preview.png" alt="Presentation preview">
 

@@ -8,25 +8,26 @@ redirect_from:
   - /about.html
 ---
 
-I am **Henrik Bradtmüller**, an Assistant Professor of Physics (*Professor Doutor*) at the **São Carlos Institute of Physics, University of São Paulo (IFSC/USP)**, in Brazil. I joined IFSC in April 2025. My background is in chemistry and materials science, and my research focuses on the atomic structure of glasses and glass-ceramics using **solid-state nuclear magnetic resonance (NMR) spectroscopy**.
-
-Before joining USP, I worked as a postdoctoral researcher with Edgar D. Zanotto at the Vitreous Materials Laboratory (LaMaV), Federal University of São Carlos. I completed my doctorate in physical chemistry at the University of Münster, working with Hellmut Eckert and Michael Ryan Hansen.
+I am **Henrik Bradtmüller**, an Assistant Professor of Physics at the **São Carlos Institute of Physics, University of São Paulo (IFSC/USP)**, Brazil. I use **solid-state NMR spectroscopy** to study how the atomic structure of glasses and glass-ceramics influences their properties.
 
 ## Research
 
-I study how glass composition affects local atomic environments and how those environments relate to properties such as chemical durability, ion transport, and crystallization. My current work combines solid-state NMR with complementary measurements and molecular dynamics simulations.
+My work connects glass composition with chemical durability, ion transport, and crystallization. I combine NMR experiments with complementary measurements and molecular dynamics simulations, with three main interests:
 
-- **Bioactive and niobium-containing glasses.** I investigate how changes in network connectivity and the environments of network-forming and modifying elements affect material properties and dissolution.
-- **Phosphate, borophosphate, borosilicate, and silicate systems.** These provide different ways to examine the relationships between composition, structure, and properties in disordered solids.
-- **NMR methods for disordered materials.** I develop and apply experiments for quadrupolar nuclei and heteronuclear dipolar interactions, aiming to obtain structural information that is difficult to access from conventional spectra alone.
-- **Glass relaxation and crystallization.** I use NMR to follow structural changes as glasses relax or form crystalline phases.
+- **Bioactive and niobium-containing glasses:** how local atomic environments and network connectivity affect dissolution and other material properties.
+- **NMR methods:** experiments that reveal the environments of quadrupolar nuclei and the proximity of different elements in disordered solids.
+- **Relaxation and crystallization:** how atomic arrangements change as glasses relax and crystalline phases form.
 
-At IFSC/USP, I work with Marcos de Oliveira Jr. and our students on solid-state NMR and glass science. My research program is supported by FAPESP through its Young Investigator (*Jovem Pesquisador*) program.
+These questions span silicate, phosphate, borophosphate, and borosilicate systems. At IFSC/USP, I work with Marcos de Oliveira Jr. and our students, with support from FAPESP’s Young Investigator program.
 
-## Teaching and tutorials
+## Background and teaching
 
-I teach physics and experimental laboratory courses at USP. This website also contains [practical NMR tutorials]({{ '/blog/' | relative_url }}), including guides to processing and fitting spectra with ssNake. The aim is to explain both the software steps and the choices behind them.
+I joined IFSC in April 2025, after postdoctoral research with Edgar D. Zanotto at UFSCar. I completed my doctorate in physical chemistry at the University of Münster with Hellmut Eckert and Michael Ryan Hansen.
 
-## Publications and contact
+Alongside undergraduate physics and laboratory teaching, I write [practical NMR tutorials]({{ '/blog/' | relative_url }}). These explain both the software steps and the reasoning behind processing and fitting decisions.
 
-See my [CV]({{ '/cv/' | relative_url }}) and [publications]({{ '/publications/' | relative_url }}) for more about my work. For questions about the tutorials or potential collaborations, you can contact me at [mail@bradtmueller.net](mailto:mail@bradtmueller.net).
+## Contact
+
+For collaborations or tutorial questions: **henrik[at]usp.br**.
+
+See my [CV]({{ '/cv/' | relative_url }}) and [publications]({{ '/publications/' | relative_url }}) for further details.
