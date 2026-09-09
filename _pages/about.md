@@ -1,47 +1,32 @@
 ---
 permalink: /
-title: ""
-excerpt: "About me"
+title: "About me"
+excerpt: "Henrik Bradtmüller — Assistant Professor of Physics at IFSC/USP, working on solid-state NMR and the structure of glasses and glass-ceramics."
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
-About Me
-======
 
-<p>Hello there! I'm <span class="highlight"><strong>Henrik Bradtmüller</strong></span>, a Materials Scientist with a strong foundation in chemistry and a passion for uncovering the atomic-level mysteries of glassy materials. My expertise lies in <span class="highlight">solid-state nuclear magnetic resonance (NMR) spectroscopy</span>, a powerful tool for probing disordered structures and advancing materials science in both academic and industrial applications.</p>
+I am **Henrik Bradtmüller**, an Assistant Professor of Physics (*Professor Doutor*) at the **São Carlos Institute of Physics, University of São Paulo (IFSC/USP)**, in Brazil. I joined IFSC in April 2025. My background is in chemistry and materials science, and my research focuses on the atomic structure of glasses and glass-ceramics using **solid-state nuclear magnetic resonance (NMR) spectroscopy**.
 
-<p>Previously, I worked as a <span class="highlight">Postdoctoral Researcher</span> at the <span class="highlight">Federal University of São Carlos</span>, where I was part of the <span class="highlight">Vitreous Materials Lab (LaMaV)</span> under the guidance of <span class="highlight">Professor Dr. Edgar Dutra Zanotto</span>. There, I deepened my understanding of glass science while contributing to cutting-edge research on crystallization mechanisms and glass stability.</p>
+Before joining USP, I worked as a postdoctoral researcher with Edgar D. Zanotto at the Vitreous Materials Laboratory (LaMaV), Federal University of São Carlos. I completed my doctorate in physical chemistry at the University of Münster, working with Hellmut Eckert and Michael Ryan Hansen.
 
-<p>As of 2024, I'm thrilled to announce that I've transitioned into a new role as an <span class="highlight">Assistant Professor of Physics</span> at the <span class="highlight">São Carlos Institute of Physics (IFSC)</span>, part of the <span class="highlight">University of São Paulo (USP)</span>. In this position, I'll continue pushing the boundaries of materials characterization while expanding my research into <span class="highlight">bioactive glasses</span> and their composition-structure-property relationships.</p>
+## Research
 
-<p>I'm deeply committed to using my skills to solve fundamental scientific challenges and develop innovative technologies. Thank you for visiting my website—feel free to <a href="mailto:mail@bradtmueller.net">reach out</a> if you'd like to collaborate or learn more about my work!</p>
+I study how glass composition affects local atomic environments and how those environments relate to properties such as chemical durability, ion transport, and crystallization. My current work combines solid-state NMR with complementary measurements and molecular dynamics simulations.
 
-<h1>My Research Interests</h1>
-<p>Glasses are among the most versatile yet least understood materials. Despite their ubiquity—from smartphone screens to optical fibers—key questions about their atomic structure, stability, and crystallization behavior remain unanswered. My research seeks to unravel these mysteries, particularly focusing on:</p>
+- **Bioactive and niobium-containing glasses.** I investigate how changes in network connectivity and the environments of network-forming and modifying elements affect material properties and dissolution.
+- **Phosphate, borophosphate, borosilicate, and silicate systems.** These provide different ways to examine the relationships between composition, structure, and properties in disordered solids.
+- **NMR methods for disordered materials.** I develop and apply experiments for quadrupolar nuclei and heteronuclear dipolar interactions, aiming to obtain structural information that is difficult to access from conventional spectra alone.
+- **Glass relaxation and crystallization.** I use NMR to follow structural changes as glasses relax or form crystalline phases.
 
-<ul>
-<li><strong>The vitreous state and its collapse</strong>: What atomic-scale factors determine whether a glass survives or crystallizes? Once nucleation begins, crystallization becomes inevitable—yet we still lack a complete picture of the mechanisms driving this process.</li>
-<li><strong>Network modifiers in glasses</strong>: Alkali and alkaline-earth oxides (e.g., Li<sub>2</sub>O, Na<sub>2</sub>O, CaO) play critical roles in glass properties, but their intermediate-range ordering (~3–5 Å) is notoriously difficult to probe. My work develops advanced <span class="highlight">solid-state NMR strategies</span> to tackle these challenges, especially for quadrupolar nuclei.</li>
-<li><strong>Bioactive glasses</strong>: In my new role at IFSC/USP, I'm expanding my focus to <span class="highlight">composition-structure-property relationships in bioactive glasses</span>. By combining NMR with computational methods, I aim to design next-generation materials for medical and technological applications.</li>
-</ul>
+At IFSC/USP, I work with Marcos de Oliveira Jr. and our students on solid-state NMR and glass science. My research program is supported by FAPESP through its Young Investigator (*Jovem Pesquisador*) program.
 
-<p>Understanding glass stability isn't just academically fascinating—it's essential for the technologies underpinning modern life. From faster internet via optical fibers to biomedical implants, glasses are irreplaceable. By refining our atomic-scale knowledge, we can unlock new functionalities and applications for this extraordinary material.</p>
+## Teaching and tutorials
 
-<h1>My Current Work</h1>
-<p>Historically, breakthroughs in glass science have relied on the development of entirely new analytical techniques—a slow and unpredictable process. <span class="highlight">Solid-state NMR spectroscopy</span> revolutionized the field by enabling atomic-level insights into disordered structures, but significant gaps remain, particularly for network-modifying elements.</p>
+I teach physics and experimental laboratory courses at USP. This website also contains [practical NMR tutorials]({{ '/blog/' | relative_url }}), including guides to processing and fitting spectra with ssNake. The aim is to explain both the software steps and the choices behind them.
 
-<p>My research bridges these gaps by:</p>
-<ul>
-<li><strong>Developing novel NMR methods</strong> to study quadrupolar nuclei (e.g., <sup>23</sup>Na, <sup>27</sup>Al, <sup>17</sup>O), which are abundant in glass modifiers but difficult to analyze.</li>
-<li><strong>Integrating computational modeling</strong> with experimental data to decode structure-property relationships in bioactive and functional glasses.</li>
-<li><strong>Collaborating across disciplines</strong> to translate fundamental discoveries into real-world applications, from durable materials to biomedical devices.</li>
-</ul>
+## Publications and contact
 
-<p>At IFSC/USP, I'm excited to build a research program that merges NMR spectroscopy with emerging computational tools, fostering innovation in glass science while training the next generation of materials researchers.</p>
-
-
-
-
-
+See my [CV]({{ '/cv/' | relative_url }}) and [publications]({{ '/publications/' | relative_url }}) for more about my work. For questions about the tutorials or potential collaborations, you can contact me at [mail@bradtmueller.net](mailto:mail@bradtmueller.net).

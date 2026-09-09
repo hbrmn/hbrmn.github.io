@@ -39,3 +39,8 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* Keep tutorial content usable on narrow screens and with keyboard navigation. */
+.page__content img { max-width: 100%; height: auto; }
+.page__content pre { overflow-x: auto; }
+.page__content a { overflow-wrap: break-word; }
+a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

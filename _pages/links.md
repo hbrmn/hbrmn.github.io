@@ -10,12 +10,15 @@ Below you can find some useful things related to Glass, NMR, and Data Science.
 Labs
 ======
 
- - [www.ifsc.usp.br/lemaf/](https://www.ifsc.usp.br/lemaf/) - Hompage of my lab.
+ - [www.ifsc.usp.br/lemaf/](https://www.ifsc.usp.br/lemaf/) - Homepage of my lab.
 
  - [www.certev.ufscar.br/en](https://www.certev.ufscar.br/en) - Homepage of my former lab.
 
 Glass and NMR Conferences
 ======
+
+Some links below refer to past editions. Check the organizers’ websites for forthcoming meetings.
+
 - [Borate-Phosphate](https://boratephosphate.sciencesconf.org/)
 
 - [GOMD](https://ceramics.org/event/16th-pacific-rim-conference-on-ceramic-and-glass-technology-including-glass-optical-materials-division-meeting-gomd-2025/)
@@ -30,12 +33,19 @@ Glass and NMR Conferences
 
 - [Alpine Conference](https://alpine-conference.org/)
 
+NMR Software
+======
+
+- [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) — source code and installation instructions. Official development moved here from GitHub starting with version 1.5.
+- [ssNake example tutorials](https://github.com/smeerten/ssnake_tutorials) — worked examples from the developers.
+- [My processing and fitting guides]({{ "/blog/" | relative_url }}) — practical walkthroughs with screenshots.
+
 NMR
 ======
 
  - [pascal-man.com/](https://www.pascal-man.com/) - Homepage of Pascal Man. Many NMR resources - principally on quadrupolar nuclei - can be found there.
 
- - [dieter-freude.de/quad-nmr/](https://www.dieter-freude.de/quad-nmr/) - Updated review on quadrupolar NMR from Dieter Freude and extensive [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{27}$O nuclei.
+ - [dieter-freude.de/quad-nmr/](https://www.dieter-freude.de/quad-nmr/) - Updated review on quadrupolar NMR from Dieter Freude and extensive [survey](https://www.dieter-freude.de/quad-nmr/8.pdf) of NMR parameters for many solids containing $^{27}$Al, $^{23}$Na, and $^{17}$O nuclei.
 
  - [CSA Tensor Convention Calculator](http://anorganik.uni-tuebingen.de/klaus/nmr/index.php?p=conventions/csa/csa) - Homepage of Klaus Eichele, providing an online tool for calculating CSA tensors in different conventions.
 
@@ -91,4 +101,4 @@ Others
 
  - [dlmf.nist.gov/10](https://dlmf.nist.gov/10) - Collection of Bessel functions.
  
- -[https://www.feynmanlectures.caltech.edu/](https://www.feynmanlectures.caltech.edu/) - Feynman lectures online
+ - [https://www.feynmanlectures.caltech.edu/](https://www.feynmanlectures.caltech.edu/) - Feynman lectures online

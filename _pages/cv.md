@@ -11,8 +11,13 @@ redirect_from:
 
 Current Position
 ======
-* **Assistant Professor of Physics**, São Carlos Institute of Physics (IFSC), University of São Paulo (2025–Present)  
+* **Assistant Professor of Physics**, São Carlos Institute of Physics (IFSC), University of São Paulo (April 2025–present)
   * Research focus: Composition-structure-property relationships in bioactive glasses using solid-state NMR spectroscopy and computational methods.
+
+Teaching
+======
+* Undergraduate physics and experimental laboratory courses at IFSC/USP.
+* Practical tutorials on solid-state NMR data processing and fitting, available in the [NMR Tutorials]({{ "/blog/" | relative_url }}) section.
 
 Education
 ======
@@ -62,7 +67,7 @@ Technical Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   

@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "About me"
-    url: /about/
+    url: /
 
   - title: "CV"
     url: /cv/
@@ -18,7 +18,7 @@ main:
 #  - title: "Portfolio"
 #    url: /portfolio/
 
-  - title: "Blog Posts and Tutorials"
+  - title: "NMR Tutorials"
     url: /blog/
 
   - title: "Useful Links"

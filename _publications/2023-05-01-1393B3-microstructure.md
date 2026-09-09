@@ -20,6 +20,6 @@ heteronuclear correlation (HETCOR) spectroscopy, showing that it progresses line
 produced glasses were tested for their effects on the viability of 3T3 cells and were found to have no toxic effects.
 Therefore, the produced glasses are promising candidates for tissue engineering applications.
 
-[Download paper here](http://hbrmn.github.io/files/paper24.pdf)
+[Download paper here](https://hbrmn.github.io/files/paper24.pdf)
 
 Recommended citation: Negar Akrami, Mehrnoosh Ghanad Philipp Keil, Henrik Bradtmüller, Michael Ryan Hansen, Saeid Kargozar, Jalil Vahdati Khaki, Sahar Mollazadeh Beidokhti, "Microstructural Properties and in vitro Dissolution of Microporous Bioactive 13-93B3 Glass Powders Synthesized via Solution Combustion Synthesis", Journal of Non-Crystalline Solids, **2023**, *615*, 122425.

@@ -2,13 +2,16 @@
 title: 'How to set up WCPMG NMR'
 date: 2021-06-28
 permalink: /posts/2021/08/2021-06-28-WCPMG-howto/
+tags:
   - NMR
   - WURST
   - WCPMG
   - how-to
 ---
 
-Here, I will demonstrate how to setup a WCPMG experiment and lay out the usual thought process when deciding which parameters to use.
+**Work in progress:** This page currently contains only the introductory note. The pulse-sequence setup and parameter-selection walkthrough are not yet available.
+
+Here, I will demonstrate how to set up a WCPMG experiment and lay out the usual thought process when deciding which parameters to use.
 
 But first, a quick recap on CPMG experiments:
 

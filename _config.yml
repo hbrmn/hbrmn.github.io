@@ -10,14 +10,14 @@ locale                   : "en-US"
 title                    : "Henrik Bradtmüller"
 title_separator          : "-"
 name                     : &name "Henrik Bradtmüller"
-description              : &description "Postdoctoral researcher in Materials Science"
+description              : &description "Assistant Professor of Physics at IFSC/USP. Solid-state NMR, glasses, and glass-ceramics."
 url                      : https://hbrmn.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/hbrmn"
+repository               : "hbrmn/hbrmn.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Henrik Bradtmüller"
   avatar           : "profile.png"
-  bio              : "Materials Scientist and solid-state NMR enthusiast."
+  bio              : "Assistant Professor at IFSC/USP. Solid-state NMR and glass science."
   location         : "São Carlos, SP - Brazil"
-  employer         :
+  employer         : "University of São Paulo"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=lU7OvVQAAAAJ"
   email            : "mail@bradtmueller.net"
@@ -102,8 +102,8 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/henrik-bradtm%C3%BCller-826584150/"
-  orcid            : "http://orcid.org/0000-0001-7971-2163"
+  linkedin         : "henrik-bradtm%C3%BCller-826584150/"
+  orcid            : "https://orcid.org/0000-0001-7971-2163"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -123,6 +123,7 @@ include:
   - _pages
   - files
 exclude:
+  - WEBSITE-REFRESH-NOTES.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -255,7 +256,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Europe/Berlin # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Sao_Paulo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

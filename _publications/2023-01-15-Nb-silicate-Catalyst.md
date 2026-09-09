@@ -11,7 +11,7 @@ citation: 'Maria J.F. Costa, Alexandre A.S. Gonçalves, Roberto Rinaldi, <b>Henr
 ---
 Metal dispersion is key for designing highly active and well-defined catalytic systems. Herein, to shed light on the effects of Nb dispersion on the conversion of fructose into HMF, highly porous silica glasses grafted with niobium oxide were prepared. Preliminary catalytic screening was done for the microwave-assisted conversion of fructose into 5-hydroxymethylfurfural (HMF) in a biphasic system. The highly porous silica glasses impregnated with niobium oxide presented HMF productivities about 10- to 20 times higher than the mesoporous NbOPO<sup>4</sup> reference material. Intriguingly, humin formation correlates with HMF yield regardless of the catalyst employed, although metal dispersion influences the acidity profile.
 
-[Download paper here](http://hbrmn.github.io/files/paper20.pdf)
+[Download paper here](https://hbrmn.github.io/files/paper20.pdf)
 
 Recommended citation: Maria J.F. Costa, Alexandre A.S. Gonçalves, Roberto Rinaldi, **Henrik Bradtmüller**, Hellmut Eckert, Eduardo B. Ferreira, "Highly porous niobium-containing silica glasses applied to the microwave-assisted conversion of fructose into HMF", Catalysis Communications, **2023**, *174*, 106577.
 

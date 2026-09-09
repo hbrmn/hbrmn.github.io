@@ -1,77 +1,88 @@
 ---
 title: 'NMR data fitting with ssNake'
 date: 2025-08-11
+modified: 2026-09-09
 permalink: /posts/2021/08/2023-04-11-ssnake-howto-fit/
+excerpt: 'Fit Lorentzian/Gaussian components in ssNake, inspect the residual, and export parameters and curves.'
+tags:
   - NMR
+  - ssNake
   - fitting
   - how-to
 ---
-In the following I will demonstrate the basic steps for fitting NMR spectra using ssNake. After you are satisfied with the processing of your dataset you can try to fit the spectrum using a number of built-in functions:
 
- - Lorentian/Gaussian 
- - CSA
- - Quadrupole
- - Quadrupole + CSA
- - Czjzek
- - Czjzek MQMAS
- - External (SIMPSON)
- - Function
+This tutorial demonstrates how to fit a processed NMR spectrum in [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake), inspect the result, and export the fitted curves. If your spectrum still needs processing, start with [the processing tutorial]({{ '/posts/2021/08/2021-06-28-ssnake-howto-processing/' | relative_url }}).
 
-In the following the general fitting procedure is demonstrated on a few example datasets.
+The example uses Lorentzian/Gaussian components for a $^{13}$C{$^{1}$H} CP-MAS spectrum of a polymer. The screenshots document the original example; controls may differ in other software releases.
 
-# Lorentzian / Gaussian Fitting
+## 1. Choose a fitting model
 
-We start with an already processed 13C{1H} CP-MAS spectrum of a polymer.
+Open the processed spectrum, zoom to the region of interest, and display the frequency axis in ppm.
 
-![Polymer spectrum](/images/ssNake-howto/13C-spectrum-loaded.jpg "13C{1H} CPMAS NMR spectrum")
+![Processed carbon-13 CP-MAS spectrum of a polymer](/images/ssNake-howto/13C-spectrum-loaded.jpg)
 
-After zooming in and setting the frequency axis to "ppm" we chose the `Lorentzian/Gaussian` model from the Fitting tab.
+Choose `Fitting → Lorentzian/Gaussian`.
 
-![Fit Selection](/images/ssNake-howto/Fit-selection.jpg "Fit selection")
+![Selecting the Lorentzian/Gaussian fitting model](/images/ssNake-howto/Fit-selection.jpg)
 
-We are presented with a new window below our spectrum comprised of two parts. On the left, we find several buttons for simulating the fit model based on the defined parameters (sim), fitting the spectrum (fit) according to the cost function defined in the Preferences tab, functions to copy and export fit parameters and curves (Copy par. and Export/Import) and a functionality to exclude certain spectral regions from the fitting algorithm.
+Other models in the illustrated version include CSA, quadrupolar interactions, combined quadrupole + CSA, Czjzek, Czjzek MQMAS, external simulations through SIMPSON, and user-defined functions. Choose a model that represents the physics of the spectrum; a flexible collection of peaks is not always a suitable substitute for an interaction-based simulation.
 
-![Fitting window](/images/ssNake-howto/fitting-window.jpg "Fitting window")
+## 2. Understand the fitting panel
 
-On the right side, we see the currently defined fit components (one currently), defined by position, area (Integral), and Lorentz/Gauss character/width. Additionally, an extra offset and overall lineshape multiplier can be defined, however, I found to use it very little.
+The left side contains controls for simulation (`Sim`), optimization (`Fit`), preferences, excluded regions, and parameter or curve export. The right side contains the components and their parameters.
 
-While the "pick" tickbox is enabled, lineshape components can be placed in the spectrum through clicking once slightly left of a signal maximum, and a second time slightly right of it. The result is not very convincing, but it helps to quickly place a few lines in the spectrum. Alternatively, the small drop down menu can be set to a different number to add lineshape components.
+![Fitting panel with controls and component parameters](/images/ssNake-howto/fitting-window.jpg)
 
-Here, I have quickly placed five components using the picking tool.
+Each component has a position, integral, and Lorentzian/Gaussian broadening parameters. An overall scale and offset are also available. Avoid varying redundant scale factors unnecessarily.
 
-![Components defined](/images/ssNake-howto/Curves-placed.jpg "Components defined")
+**A checked parameter box keeps that parameter fixed. An unchecked box allows it to vary during fitting.**
 
-For fitting the spectra, a click on the Fit button is enough. This will try to minimize the root-mean-square-deviation (RMSD, see bottom left) according to the parameters on the right side which are not ticked! To hold a parameter constant it suffices to tick the box next to it. For now I will untick the Gaussian parameter so I will end up with mixed Lorentz/Gaussian components. After a first fit the result looks like this:
+## 3. Place the components
 
-![First Fit](/images/ssNake-howto/first-fit.jpg "First Fit")
+With `Pick` enabled, click slightly to the left and then slightly to the right of a peak maximum to place a component. Alternatively, change the component count using the drop-down control and enter approximate parameters manually.
 
-A bit better, but it seems the fitting routine didn't have enough time to converge on a satisfying result. Using the Preferences tab we can increase the number of iteration steps or "evaluations" to give the fit more time.
+Here, I placed five components as a starting model.
 
-![Preferences Tab](/images/ssNake-howto/preferences-tab.jpg "Preferences tab")
+![Five initial lineshape components](/images/ssNake-howto/Curves-placed.jpg)
 
-After another round of fitting the result already looks rather solid.
+Click `Sim` to inspect the starting model before fitting. The number of components should be guided by the spectral features and what is known about the sample. Five components are an example, not a general prescription.
 
-![2nd Fit](/images/ssNake-howto/2nd-fit.jpg "2nd Fit")
+## 4. Fit and inspect the result
 
-Once I am happy with the result, I can export the fit parameters using the Export/Import tab. For exporting the experimental data and fitted curves together one should use the "Curves to Workspace" button. 
+Choose which parameters may vary, then click `Fit`. For this example, I allowed the Gaussian contribution to vary as well, producing mixed Lorentzian/Gaussian components.
 
-![Export Fit](/images/ssNake-howto/Export-fit.jpg "Export Fit")
+![Result of the first fitting round](/images/ssNake-howto/first-fit.jpg)
 
-After choosing the parts of the data I would like to export, all curves are placed in a new workspace, which I named with the ending "-export". From here, in order to export the curves to a text file first the axis should be set to ppm, if desired, and then the option under `File -> Export -> ASCII` (or CSV) needs to be chosen.
+If the optimizer reaches its evaluation limit, use `Preferences` to increase the allowed number of evaluations and repeat the fit. A poor fit can also result from unsuitable starting values or an inadequate model; more evaluations will not necessarily resolve those problems.
 
-![Export Data](/images/ssNake-howto/export-data.jpg "Export Data")
+![Fitting preferences and evaluation settings](/images/ssNake-howto/preferences-tab.jpg)
 
-The resulting file can then be imported in other programs for visualization. Alternatively a Figure can be created and exported using ssNake itself, based on the matplotlib package. Therefore, `Export -> Figure` will open another menu, in which the currently active window can be edited and then saved as different file types.
+After another round, the agreement improves.
 
-![Export Figure](/images/ssNake-howto/figure-exp.jpg "Figure Export")
+![Result after a further fitting round](/images/ssNake-howto/2nd-fit.jpg)
 
-# Czjzek Fitting
+Check the residual as well as the reported RMSD. Systematic shoulders or oscillations can reveal missing structure or processing artifacts. Repeat the fit with different starting values and check that the parameters remain physically reasonable.
 
-Open up the dataset Czjezk_example. Since this data has already been processed in Topspin, we need to only perform a few and sometimes optional steps. First, we do a baseline correction of the dataset (Tools ---> Baseline correction), and secondly normalize (Matrix ---> Normalize) the spectrum in order to keep the integral values of the fit components in managable sizes.
+For a CP-MAS spectrum, fitted component areas are **not automatically proportional to site populations**: cross-polarization efficiencies and relaxation can differ between sites. Overlapping components can also have strongly correlated areas and widths.
 
-Once this is done we choose the Czjzek fitting option in the Fitting dropdown menu:
+## 5. Export parameters and curves
 
+Use `Export/Import` to save the fit parameters. To export the experiment and fitted curves together, choose `Curves to Workspace` and select the curves to include.
 
+![Exporting fitted parameters and curves](/images/ssNake-howto/Export-fit.jpg)
 
-A number of advanced tutorials can be found [here](https://github.com/smeerten/ssnake_tutorials).
+The selected curves appear in a new workspace. Set the axis to ppm if desired, then use `File → Export → ASCII` or `CSV`.
 
+![Exporting the new workspace to a text file](/images/ssNake-howto/export-data.jpg)
+
+You can plot the exported data in another program or use `File → Export → Figure` in ssNake to prepare a figure.
+
+![Figure-export controls in ssNake](/images/ssNake-howto/figure-exp.jpg)
+
+For a reproducible result, retain the processed data, component model, fixed and variable parameters, excluded regions, and exported fit parameters. Show the experimental spectrum, total fit, components, and residual when presenting a decomposition.
+
+## Fitting quadrupolar distributions
+
+The standalone [Czjzek fitting guide]({{ '/posts/2026/09/ssnake-czjzek-fitting/' | relative_url }}) explains the additional library-generation step and the distinction between standard and extended distributions. It is a working draft pending a complete illustrated example.
+
+Further worked examples are available in the developers’ [ssNake tutorial collection](https://github.com/smeerten/ssnake_tutorials).

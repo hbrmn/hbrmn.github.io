@@ -1,5 +1,7 @@
 ---
 title: 'Fitting Czjzek distributions with ssNake'
+modified: 2026-09-09
+excerpt: 'Working guide to Czjzek fitting; example data, screenshots, and numerical validation are still in preparation.'
 date: 2026-09-08
 permalink: /posts/2026/09/ssnake-czjzek-fitting/
 tags:
@@ -9,6 +11,8 @@ tags:
   - quadrupolar NMR
   - Czjzek
 ---
+
+**Working draft:** The example dataset, screenshots, and final fit parameters are still being prepared. The workflow below has not yet been validated here against a specific ssNake release.
 
 Quadrupolar NMR spectra of glasses and other disordered solids often cannot be described by a single set of quadrupolar parameters. Instead, the local environment varies from one nucleus to another, producing distributions of the quadrupolar coupling constant, $C_Q$, and the asymmetry parameter, $\eta_Q$. In this tutorial, I will show how such spectra can be fitted in [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) using the Czjzek model.
 
@@ -28,7 +32,7 @@ This distinction matters: the standard and extended models are not merely two di
 
 ## Load and prepare the spectrum
 
-Open the dataset `Czjzek_example` using `File --> Open`. Since this example has already been processed in TopSpin, only a few preparatory steps are required.
+Open your processed quadrupolar spectrum using `File → Open`. The planned worked example uses `Czjzek_example`, which is not yet supplied with this tutorial. For data already processed in TopSpin, only a few preparatory steps may be required.
 
 First, apply a baseline correction using `Tools --> Baseline Correction`. Exclude the signal-containing regions from the baseline fit and check that the correction does not remove broad spectral intensity. This is particularly important for disordered quadrupolar spectra, because a slowly varying part of the true lineshape can easily be mistaken for baseline curvature.
 
@@ -69,11 +73,11 @@ The most important component parameters are:
 
 Czjzek fitting requires an additional step that is not needed for a simple Lorentzian or Gaussian fit. ssNake first calculates a library of quadrupolar powder patterns over a grid of $C_Q$ and $\eta_Q$ values. During simulation and fitting, these patterns are combined with weights defined by the selected Czjzek distribution. Pre-calculating the library makes the iterative fit much faster.
 
-Click `Library` in the fitting panel. In the library window, check the experimental settings and define the $C_Q$–$\eta_Q$ grid. For an MAS spectrum, choose the finite-MAS option, enter the experimental spinning frequency, and include enough spinning sidebands to cover all sidebands visible in the experimental spectral window. A static spectrum or a spectrum containing only the central transition requires different settings.
+Click `Library` in the fitting panel. In the library window, check the experimental settings and define the $C_Q$–$\eta_Q$ grid. For an MAS spectrum, choose the finite-MAS option, enter the experimental spinning frequency, and include enough spinning sidebands to cover all sidebands visible in the experimental spectral window. Choose static or MAS conditions to match the experiment, and select the transitions separately. A central-transition-only spectrum can be either static or MAS; central-transition selection does not by itself determine the spinning treatment.
 
 <!-- SCREENSHOT 04: Library-generation window with the experimental settings and CQ/eta grid highlighted. Suggested filename: /images/ssNake-czjzek/Czjzek-library-settings.jpg -->
 
-There is a trade-off when choosing the grid. A broad and finely spaced grid is more flexible and accurate, but requires more time and memory. A grid that is too narrow truncates the distribution and can bias the fitted value of $\sigma$. As a useful rule of thumb, the maximum $C_Q$ should reach approximately $4\sigma$ for the largest distribution width that the fit is likely to explore. This is a starting criterion rather than a substitute for inspecting the distribution.
+There is a trade-off when choosing the grid. A broad and finely spaced grid is more flexible and accurate, but requires more time and memory. A grid that is too narrow truncates the distribution and can bias the fitted value of $\sigma$. Choose a range wide enough to contain the distribution for all parameter values explored during the fit. The appropriate limit depends on the software’s definition of $\sigma$ and, for the extended model, the ordered contribution. Verify convergence by increasing the range and refining the grid; do not rely on a universal multiplier of $\sigma$.
 
 Click `Show` to display the distribution weights on the current $C_Q$–$\eta_Q$ grid. The intensity should decay well before it reaches the upper $C_Q$ boundary. If the contours are cut off at the edge, increase the maximum $C_Q$ and generate the library again.
 
@@ -145,7 +149,7 @@ For a publication-ready image, use `File --> Export --> Figure`. I normally show
 
 <!-- SCREENSHOT 11: Curves-to-Workspace or final figure-export window. Suggested filename: /images/ssNake-czjzek/Czjzek-export.jpg -->
 
-## Summary
+## Workflow checklist
 
 The essential steps are:
 

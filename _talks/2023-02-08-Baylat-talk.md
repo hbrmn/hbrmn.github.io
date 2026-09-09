@@ -8,7 +8,7 @@ date: 2022-09-04
 location: "São Carlos - SP - Brazil"
 ---
 
-[Download talk here](http://hbrmn.github.io/files/talk2-Baylat_Talk_HB.pdf)
+[Download talk here](https://hbrmn.github.io/files/talk2-Baylat_Talk_HB.pdf)
 
 <br/><img src='/images/talk2-preview.png'>
 
