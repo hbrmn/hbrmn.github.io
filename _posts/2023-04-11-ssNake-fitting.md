@@ -1,6 +1,6 @@
 ---
 title: 'NMR data fitting with ssNake'
-date: 2023-04-11
+date: 2025-08-11
 permalink: /posts/2021/08/2023-04-11-ssnake-howto-fit/
   - NMR
   - fitting
