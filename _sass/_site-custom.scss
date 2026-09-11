@@ -16,3 +16,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
   .sidebar { padding-top: 0; height: auto; max-height: calc(100vh - 110px); }
 }
 @import "vendor/magnific-popup/magnific-popup";
+
+/* Keep the footer below the content, as on the original personal site. */
+.page__footer { position: absolute; }
