@@ -7,6 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
+site_theme               : "default"
 title                    : "Henrik Bradtmüller"
 title_separator          : "-"
 name                     : &name "Henrik Bradtmüller"
@@ -123,6 +124,10 @@ include:
   - _pages
   - files
 exclude:
+  - .github
+  - scripts
+  - THEME-UPGRADE.md
+  - package-lock.json
   - WEBSITE-REFRESH-NOTES.md
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -266,6 +271,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jemoji
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

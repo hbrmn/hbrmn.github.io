@@ -1,0 +1,18 @@
+/* Personal appearance and compatibility overrides; upstream theme files stay reusable. */
+:root:not([data-theme="dark"]) {
+  --global-base-color: #7a8288;
+  --global-link-color: #52adc8;
+  --global-link-color-hover: #3e8296;
+  --global-link-color-visited: #7dc2d6;
+  --global-masthead-link-color: #7a8288;
+}
+.page__content img { max-width: 100%; height: auto; }
+.page__content pre { overflow-x: auto; }
+.page__content a { overflow-wrap: break-word; }
+a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.page__title { line-height: 1.2; }
+.sidebar .author__desktop { display: block; }
+@media screen and (min-width: 1024px) {
+  .sidebar { padding-top: 0; height: auto; max-height: calc(100vh - 110px); }
+}
+@import "vendor/magnific-popup/magnific-popup";
