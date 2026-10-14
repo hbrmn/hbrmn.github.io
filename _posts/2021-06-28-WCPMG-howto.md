@@ -2,16 +2,15 @@
 title: 'How to set up WCPMG NMR'
 date: 2021-06-28
 permalink: /posts/2021/08/2021-06-28-WCPMG-howto/
+tags:
   - NMR
   - WURST
   - WCPMG
   - how-to
 ---
 
-Here, I will demonstrate how to setup a WCPMG experiment and lay out the usual thought process when deciding which parameters to use.
+**Work in progress:** The experiment setup and parameter-selection walkthrough are still in preparation.
 
-But first, a quick recap on CPMG experiments:
+WCPMG combines broadband WURST pulses with a Carr–Purcell–Meiboom–Gill echo train. Recording multiple echoes improves sensitivity for broad solid-state NMR signals when the sample’s relaxation behavior permits it.
 
-The Carr-Purcell-Meiboom-Gill (CPMG) experiment extends a simple Hahn echo experiment by recording several echoes within a single experiment, quickly alternating between the pulse gating and signal acquisition. This way, by superimposing all measured free-induction decays (FIDs) and subsequent Fourier transformation (FT), a regular frequency spectrum can be obtained.
-
-
+The planned tutorial will cover pulse settings, echo timing, and processing choices, with an example showing how each affects the acquired spectrum.

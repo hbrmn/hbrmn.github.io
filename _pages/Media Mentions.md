@@ -1,29 +1,32 @@
 ---
 layout: archive
-title: "Mentions of my work in the Media"
+title: "Media and software contributions"
 permalink: /media/
 author_profile: true
 redirect_from:
   - /media
 ---
 
- - ceramics.org, the website of [The American Ceramic Society](https://ceramics.org/ceramic-tech-today/glass-1/new-solid-state-nmr-strategy-cracks-open-the-black-box-of-crystal-nucleation-in-glass).
+Selected coverage of my research and contributions to NMR software.
 
- ![Mention1](/images/mention2.jpg "Mention on Ceramics.org"){: width="50%" }
+## Glass nucleation and relaxation
 
- - and [here](https://ceramics.org/ceramic-tech-today/basic-science/unveiling-the-hidden-role-of-intermediate-oxides-in-glass/).
+The **American Ceramic Society** highlighted our [NMR approach to crystal nucleation in glass](https://ceramics.org/ceramic-tech-today/glass-1/new-solid-state-nmr-strategy-cracks-open-the-black-box-of-crystal-nucleation-in-glass). The **Brazilian Materials Research Society** also featured our [work on structural relaxation](https://www.sbpmat.org.br/en/artigo-em-destaque-segredos-da-relaxacao-estrutural-dos-vidros-finalmente-revelados/).
 
- ![Mention4](/images/mention4.jpg "Mention on Ceramics.org"){: width="50%" }
+![American Ceramic Society coverage of glass nucleation](/images/mention2.jpg){: width="50%" }
 
- - SBPMat.org, the website of the [Brazilian Materials Research Society](https://www.sbpmat.org.br/en/artigo-em-destaque-segredos-da-relaxacao-estrutural-dos-vidros-finalmente-revelados/)
+![Brazilian Materials Research Society coverage of glass relaxation](/images/mention1.jpg){: width="50%" }
 
- ![Mention2](/images/mention1.jpg "Mention on SBPMat.org"){: width="50%" }
+## The role of intermediate oxides
 
- - [Agência FAPESP](https://agencia.fapesp.br/estudo-explica-o-papel-de-certos-tipos-de-oxidos-na-estrutura-e-desenvolvimento-de-vidros-especiais/41986/)
- - [English Translation](https://www.eurekalert.org/news-releases/1000687)
+Our research on intermediate oxides in glasses was covered by the [American Ceramic Society](https://ceramics.org/ceramic-tech-today/basic-science/unveiling-the-hidden-role-of-intermediate-oxides-in-glass/) and [Agência FAPESP](https://agencia.fapesp.br/estudo-explica-o-papel-de-certos-tipos-de-oxidos-na-estrutura-e-desenvolvimento-de-vidros-especiais/41986/). An [English-language account](https://www.eurekalert.org/news-releases/1000687) is also available.
 
- ![Mention5](/images/mention5.jpg "Mention on Agencia FAPESP"){: width="50%" }
+![American Ceramic Society coverage of intermediate oxides](/images/mention4.jpg){: width="50%" }
 
- - Two significant contributions to [ssNake version 1.4](https://www.ru.nl/science/magneticresonance/software/ssnake/)
+![Agência FAPESP coverage of glass structure](/images/mention5.jpg){: width="50%" }
 
- ![Mention3](/images/mention3.jpg "Mention on ru.nl"){: width="500" }
+## ssNake contributions
+
+My contributions to **ssNake version 1.4** were acknowledged on the software’s website. See the [current project](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) and my [processing and fitting tutorials]({{ '/blog/' | relative_url }}).
+
+![Acknowledgment of contributions to ssNake version 1.4](/images/mention3.jpg){: width="500" }

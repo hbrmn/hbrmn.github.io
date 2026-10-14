@@ -1,79 +1,112 @@
 ---
 title: 'NMR data processing with ssNake'
 date: 2025-04-11
+modified: 2026-09-09
 permalink: /posts/2021/08/2021-06-28-ssnake-howto-processing/
+excerpt: 'Process an NMR FID in ssNake: sizing, apodization, Fourier transformation, phase correction, and baseline correction.'
+tags:
   - NMR
+  - ssNake
   - processing
   - how-to
 ---
 
-Below you can find some instructions on how to install and use [ssNake](https://www.ru.nl/science/magneticresonance/software/ssnake/), for processing and analyzing NMR data.
+This tutorial takes a $^{29}$Si MAS NMR dataset from a lithium disilicate glass through basic processing in [ssNake](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake). We will start with the free-induction decay (FID) and finish with a phased, baseline-corrected spectrum ready for analysis.
 
-# Installation
+The screenshots show the version used for the original example. Menu names and installation requirements may differ between releases. The processing parameters below belong to this dataset; they are not defaults for every experiment.
 
-## Windows - Standalone
+## Install ssNake
 
-You can obtain an executable ssNake v1.4 installer through this [link](https://www.ru.nl/publish/pages/914099/ssnake_v1_4_installer_windows.zip) or check for the latest version [here](https://www.ru.nl/science/magneticresonance/software/ssnake/). The installation is straightforward and will leave you with an executable to directly launch the software.
+Official development moved from GitHub to the [Radboud GitLab repository](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake) starting with version 1.5, as documented in the [original repository](https://github.com/smeerten/ssnake). Start with the installation instructions supplied with the release you download.
 
-## Linux / Python source code
+### Windows
 
-In order to run ssNake on Linux or on any other operating system with a present Python 3 installation, you can directly [download](https://github.com/smeerten/ssnake/archive/refs/heads/master.zip) its source code or use git to clone it into a new directory:
+The developers provide a standalone Windows installer through their [software page](https://www.mrrc.nl/software), with older versions listed under [GitLab releases](https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake/-/releases). Follow the instructions for the version you select. A standalone package includes the required runtime; a source installation requires Python and the dependencies specified by that release. The old version 1.4 installer is no longer the starting point for this guide.
 
-````bash
-mkdir ssNakeDir #This line is optional
-git clone https://github.com/smeerten/ssnake.git ssNakeDir
+### Running from source
 
-(or simply)
+Download the source from the official repository or clone it:
 
-git clone https://github.com/smeerten/ssnake.git
-````
-After downloading you can simply execute ssNake.py with Python inside the "src" directory inside the installation folder:
+```bash
+git clone https://gitlab.science.ru.nl/mrrc/nmrzoo/ssnake.git
+```
 
-````Bash
-python3 ssNakeDir/src/ssnake.py
-````
+Install the dependencies listed in that checkout's README. The current repository README starts the program with:
 
-# Processing data
-Once ssNake's GUI is loaded, you can open a new dataset via `File --> Open` which will either display an FID (like in my case) or a spectrum, depending on whether your data was already processed before or not. Typically, data imported from Bruker's Topspin will show up as spectrum. In this example I loaded a $^{29}$Si MAS NMR experiment on a lithium disilicate glass measured on a Varian machine:
+```bash
+python3 ssnake/src/ssNake.py
+```
 
-![Loaded FID](/images/ssNake-howto/FID_loaded.jpg "Raw FID after loading a Varian dataset.")
+The filename is case-sensitive on Linux: `ssNake.py` is different from `ssnake.py`. Follow the downloaded version's instructions if its layout has changed.
 
-The most common processing functionalities are found in the Tools and Matrix tabs. For the current example I truncated the FID after 1024 points using `Matrix --> Sizing` and after applied the changes by clicking on "ok". Next, I performed a zero-filling up to 2048 points. The resulting FID looks like this:
+## 1. Load the dataset
 
-![sized FID](/images/ssNake-howto/FID_sized.jpg "Zero-filling the FID.")
+Choose `File → Open`. Depending on the selected data, ssNake will display either an FID or an already processed spectrum. Bruker datasets can contain both raw and processed data, so check what you have opened before applying a Fourier transform.
 
-A window function can be applied via `Tools --> Apodize`. In the current example I applied a Gaussian window function with roughly 100 Hz of width. Note how the window function is displayed in green and the raw FID remains as a gray shade:
+For this example, I loaded a $^{29}$Si MAS NMR experiment recorded on a Varian instrument.
 
-![apodized FID](/images/ssNake-howto/FID_apodization.jpg "Applying a Gaussian windows function.")
+![Raw FID after loading the Varian dataset](/images/ssNake-howto/FID_loaded.jpg)
 
-Lastly, I shifted the FID six points to the left via `Matrix --> Shift Data`:
+## 2. Adjust the FID length
 
-![left-shifted FID](/images/ssNake-howto/FID_leftshift.jpg "Left-shifting the FID six points.")
+Using `Matrix → Sizing`, I truncated the FID to 1024 points and then zero-filled it to 2048 points.
 
-By the way, you can zoom-in and -out of your data by dragging a box with your left-mouse button, drag your data around with the right-mouse button, scale your data with the mouse-wheel, and - perhaps most importantly - reset to the default view by double-right clicking.
+Truncation is useful when the later points contain predominantly noise, but cutting off a signal that has not decayed can introduce artifacts. Zero-filling provides more points in the frequency-domain spectrum; it does not add experimental resolution.
 
-Once we are all set we can finally do a Fourier-Transform of the FID by clicking on the button in the bottom-left corner of the main window labeled 'Fourier' or, aLternatively, use the shortcut `Ctrl + F`, or do it via `Transforms --> Fourier Transform`. For my data this results in the following spectrum:
+![FID after truncation and zero-filling](/images/ssNake-howto/FID_sized.jpg)
 
-![Spectrum after FFT](/images/ssNake-howto/Spec_raw.jpg "Spectrum resulting from Fourier Transformation.")
+## 3. Apply a window function
 
-Before continuing you might want to change the abscissa label to ppm instead of Hz. This can be done in the Axis tab below the spectrum:
+Choose `Tools → Apodize`. Here, I applied a Gaussian window with a width of approximately 100 Hz. The window is shown in green, and the original FID remains visible in gray.
 
-![Axis Tab](/images/ssNake-howto/Spec_raw.jpg "The Axis Tab let's you choose the Units of the abscissa.")
+Apodization changes the balance between signal-to-noise ratio and resolution. Use only as much broadening as the analysis requires, and record the setting when comparing lineshapes.
 
-Now it's time to correct the phase. `Tools --> Phasing -> Phase` will take you to the interactive phase correction window in which you can apply zeroth- and first-order phase correction by clicking on the respective arrow buttons. Note that by holding down Ctrl or Shift you can apply a 10x or 100x multiplier to the applied amount on each click. Here, I applied enough first-order correction to get the barely visible spinning-sidebands facing up and then adjusted the zero-order correction accordingly:
+![Gaussian apodization applied to the FID](/images/ssNake-howto/FID_apodization.jpg)
 
-![Phasing the spectrum](/images/ssNake-howto/Spec_phase.jpg "Phasing the spectrum.")
+For this dataset, I also shifted the FID six points to the left using `Matrix → Shift Data`. This is a dataset-specific correction, not a step to apply automatically: removing initial points changes the signal and its phase behavior.
 
-At this point the spectrum looks already pretty decent. A baseline correction, however, will surely help with lineshape deconvolution later on. In ssNake, baseline corrections, accessible via `Tools --> Baseline Correction`, are implemented in a rather clever way. Instead of spline fitting, often encountered in other software, the baseline will be fitted using a polynomial or sine/cosine function. Conveniently you get to select which parts of the spectrum are to be ignored, namely all NMR signals. The latter is done by left-clicking once to mark the onset of an NMR signal and left-clicking a second time to span a region which is then marked in red. Lastly, the degree of the fitting function is defined - best chosen by some trial-and-error - and clicking on `Fit`. The result may then look similar to this:
+![FID shifted six points to the left](/images/ssNake-howto/FID_leftshift.jpg)
 
-![Baseline correction](/images/ssNake-howto/Spec_baselinecorr.jpg "Applying a sine/cosine baseline correction.")
+## 4. Fourier-transform the data
 
-Now you are basically done. In my case, I find it convenient to additionally normalize my data with respect to the signal maximum which makes fitting the data easier afterwards:
+Click `Fourier` at the bottom left of the window, use `Ctrl + F`, or choose `Transforms → Fourier Transform`.
 
-![Normalizing the spectrum](/images/ssNake-howto/Spec_normalized.jpg "Normalizing the data.")
+![Spectrum after Fourier transformation](/images/ssNake-howto/Spec_raw.jpg)
 
-The final result of the $^{29}$Si MAS NMR spectrum of a vitreous lithium disilicate sample then looks like this:
+Use the `Axis` tab to display the frequency axis in ppm if desired. Changing the displayed unit does not establish the chemical-shift reference; check the reference separately.
 
-![Final result](/images/ssNake-howto/Spec_final.jpg "Final spectrum.")
+To navigate the display, drag a box with the left mouse button to zoom, drag with the right button to move the view, and use the mouse wheel to scale the signal. Double-click the right mouse button to reset the view.
 
+## 5. Correct the phase
 
+Choose `Tools → Phasing → Phase`. Adjust the zero- and first-order phase until the signals are as close as possible to absorptive lineshapes. In the illustrated interface, holding `Ctrl` or `Shift` increases the adjustment step by a factor of 10 or 100.
+
+In this example, I used the weak spinning sidebands to help assess the first-order correction, then adjusted the zero-order phase. Check the complete spectral region rather than only the strongest peak.
+
+![Spectrum during interactive phase correction](/images/ssNake-howto/Spec_phase.jpg)
+
+## 6. Correct the baseline
+
+Choose `Tools → Baseline Correction`. The illustrated version fits a polynomial or a sine/cosine function to the selected baseline regions.
+
+Exclude the NMR signals by clicking at the beginning and end of each signal-containing region. These excluded regions appear in red. Choose a low-complexity baseline function first, click `Fit`, and inspect the result before accepting it.
+
+Broad spectral intensity can resemble baseline curvature. Do not increase the fitting order simply to make the baseline look flatter if that removes real signal.
+
+![Baseline correction with signal regions excluded](/images/ssNake-howto/Spec_baselinecorr.jpg)
+
+## 7. Normalize and check the result
+
+Normalization is optional. I find it convenient before fitting because it keeps the numerical scale manageable. Use `Matrix → Normalize` and check the normalization mode; normalization to a maximum and normalization to an integral have different meanings.
+
+![Normalization of the processed spectrum](/images/ssNake-howto/Spec_normalized.jpg)
+
+The final spectrum of this lithium disilicate glass is shown below.
+
+![Final processed silicon-29 MAS NMR spectrum](/images/ssNake-howto/Spec_final.jpg)
+
+Before proceeding, check the chemical-shift reference, phase, baseline, and any artifacts introduced by truncation or shifting. Retain the raw data and record the processing settings so the result can be reproduced.
+
+## Next step
+
+Continue with [NMR data fitting with ssNake]({{ '/posts/2021/08/2023-04-11-ssnake-howto-fit/' | relative_url }}). For quadrupolar spectra of disordered materials, see the working guide to [Czjzek fitting]({{ '/posts/2026/09/ssnake-czjzek-fitting/' | relative_url }}).
