@@ -1,7 +1,7 @@
 ---
 title: 'Fitting Czjzek distributions with ssNake'
-date: 2026-09-08
-permalink: /posts/2026/09/ssnake-czjzek-fitting/
+date: 2026-02-15
+permalink: /posts/2026/02/ssnake-czjzek-fitting/
 tags:
   - NMR
   - ssNake
